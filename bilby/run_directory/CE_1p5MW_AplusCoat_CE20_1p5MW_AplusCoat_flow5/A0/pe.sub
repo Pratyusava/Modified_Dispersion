@@ -1,0 +1,12 @@
+universe = vanilla
+executable = /ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/bin/python
+arguments = "/ligo/home/ligo.org/pratyusava.baral/dispersion/bilby/scripts/pe.py  $(macroj) --outdir results/$(Process)  --sample-CE-arrival-time   --CE20   --A1  --nlive 500   --nact 16   --dlogz 0.01   --chi 10   --epsilon 0.1   -1245   --mode_array '[[2,2], [3,2], [3,3], [4,4]]'"
+accounting_group = ligo.dev.o4.cbc.pe.lalinferenceonline
+request_memory = 20000
+request_disk = 2000
+request_cpus = 4
+notification = never
+output = logs/$(Process).out
+error = logs/$(Process).err
+log = logs/$(Process).log
+queue macroj from ../index.txt

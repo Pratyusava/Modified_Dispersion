@@ -1,0 +1,1287 @@
+15:02 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_individual_modes
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+/scratch2/ligo.org/pratyusava.baral/dispersion/dispersion_env/src/bilby-x-g/bilby/gw/detector/interferometer.py:483: RuntimeWarning: divide by zero encountered in scalar power
+  lambda_A = h * np.abs(A) ** (1/(a-2))
+15:02 bilby INFO    : No prior given, using default BNS priors in /scratch2/ligo.org/pratyusava.baral/dispersion/dispersion_env/src/bilby-x-g/bilby/gw/prior_files/aligned_spins_bns_tides_on.prior.
+15:02 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_relative_binning_individual_modes
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_neutron_star_parameters
+15:02 bilby INFO    : Initial fiducial waveforms set up
+15:02 bilby INFO    : Summary Data Obtained
+15:02 bilby INFO    : Fiducial likelihood: 562863.19
+15:02 bilby INFO    : Running for label 'None', output will be saved to 'results/15'
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+15:02 bilby INFO    : Using lal version 7.7.0
+15:02 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.26.1;Id: c90e1175f5e238741185744a4e516e58d42a9aec;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+15:02 bilby INFO    : Using lalsimulation version 6.2.0
+15:02 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.26.1;Id: c90e1175f5e238741185744a4e516e58d42a9aec;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+15:02 bilby INFO    : Analysis priors:
+15:02 bilby INFO    : mass_ratio=Uniform(minimum=0.5779212031802755, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+15:02 bilby INFO    : chirp_mass=Uniform(minimum=34.41361251647758, maximum=34.47361251647758, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+15:02 bilby INFO    : luminosity_distance=Uniform(minimum=365.23844101876045, maximum=455.23844101876045, name='luminosity_distance', latex_label='$d_L$', unit=None, boundary=None)
+15:02 bilby INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+15:02 bilby INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+15:02 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+15:02 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+15:02 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
+15:02 bilby INFO    : chi_1=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_1', latex_label='$\\chi_1$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
+15:02 bilby INFO    : chi_2=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_2', latex_label='$\\chi_2$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
+15:02 bilby INFO    : A=Uniform(minimum=-1, maximum=1, name='A', latex_label='A', unit=None, boundary=None)
+15:02 bilby INFO    : CE_time=Uniform(minimum=1940018297.268599, maximum=1940018297.288599, name='CE_time', latex_label='$t_{CE}$', unit='$s$', boundary=None)
+15:02 bilby INFO    : a=0
+15:02 bilby INFO    : fiducial=0
+15:02 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.relative.RelativeBinningGravitationalWaveTransientNextGenerationModebyMode'>
+15:02 bilby INFO    : Analysis likelihood noise evidence: -562863.1900365514
+15:02 bilby INFO    : Single likelihood evaluation took 6.628e-02 s
+15:02 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'acceptance-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 16, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.01, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x1521d7a75690>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+15:02 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+15:02 bilby INFO    : Using dynesty version 2.1.5
+15:02 bilby INFO    : Using the bilby-implemented acceptance-walk sampling with an average of 16.0 accepted steps per MCMC and maximum length 5000
+15:02 bilby INFO    : Setting up multiproccesing pool with 16 processes
+15:02 bilby INFO    : Resume file results/15/None_resume.pickle does not exist.
+15:02 bilby INFO    : Generating initial points from the prior
+15:13 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+15:13 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+15:13 bilby WARNING : Failed to create dynesty state plot at checkpoint
+15:13 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+15:13 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+15:13 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+15:13 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:23 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:23 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:23 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:23 bilby WARNING : Axis limits cannot be NaN or Inf
+15:23 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:34 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:34 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:34 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:34 bilby WARNING : Axis limits cannot be NaN or Inf
+15:34 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:44 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:44 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:44 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:44 bilby WARNING : Axis limits cannot be NaN or Inf
+15:44 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:54 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:54 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:54 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:54 bilby WARNING : Axis limits cannot be NaN or Inf
+15:54 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:05 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+16:05 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+16:05 bilby WARNING : Failed to create dynesty state plot at checkpoint
+16:05 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+16:05 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+16:05 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+16:05 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:16 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+16:16 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+16:16 bilby WARNING : Failed to create dynesty state plot at checkpoint
+16:16 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+16:16 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+16:16 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+16:16 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:26 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+16:26 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:26 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:26 bilby WARNING : Axis limits cannot be NaN or Inf
+16:26 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:36 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+16:36 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:36 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:36 bilby WARNING : Axis limits cannot be NaN or Inf
+16:36 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:46 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+16:46 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:46 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:47 bilby WARNING : Axis limits cannot be NaN or Inf
+16:47 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:57 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+16:57 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:57 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:57 bilby WARNING : Axis limits cannot be NaN or Inf
+16:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:07 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+17:07 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+17:07 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:07 bilby WARNING : Axis limits cannot be NaN or Inf
+17:07 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:18 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+17:18 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:18 bilby WARNING : Failed to create dynesty state plot at checkpoint
+17:18 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:18 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+17:18 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:18 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:28 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+17:28 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:28 bilby WARNING : Failed to create dynesty state plot at checkpoint
+17:28 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:28 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+17:28 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:28 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:39 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+17:39 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+17:39 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:39 bilby WARNING : Axis limits cannot be NaN or Inf
+17:39 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:50 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+17:50 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:50 bilby WARNING : Failed to create dynesty state plot at checkpoint
+17:50 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:50 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+17:50 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:50 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:00 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:00 bilby WARNING : Axis limits cannot be NaN or Inf
+18:00 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:10 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+18:10 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+18:10 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:10 bilby WARNING : Axis limits cannot be NaN or Inf
+18:10 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:21 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+18:21 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+18:21 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:21 bilby WARNING : Axis limits cannot be NaN or Inf
+18:21 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:32 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:32 bilby WARNING : Axis limits cannot be NaN or Inf
+18:32 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:43 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:43 bilby WARNING : Axis limits cannot be NaN or Inf
+18:43 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:53 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+18:53 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+18:53 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:53 bilby WARNING : Axis limits cannot be NaN or Inf
+18:53 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:03 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+19:03 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+19:03 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:03 bilby WARNING : Axis limits cannot be NaN or Inf
+19:03 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:13 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:13 bilby WARNING : Axis limits cannot be NaN or Inf
+19:13 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:25 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+19:25 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+19:25 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:25 bilby WARNING : Axis limits cannot be NaN or Inf
+19:25 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:36 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:36 bilby WARNING : Axis limits cannot be NaN or Inf
+19:36 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:47 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+19:47 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+19:47 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:47 bilby WARNING : Axis limits cannot be NaN or Inf
+19:47 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:58 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+19:58 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+19:58 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:58 bilby WARNING : Axis limits cannot be NaN or Inf
+19:58 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:09 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+20:09 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+20:09 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:09 bilby WARNING : Axis limits cannot be NaN or Inf
+20:09 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:20 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+20:20 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+20:20 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:20 bilby WARNING : Axis limits cannot be NaN or Inf
+20:20 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:30 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+20:30 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+20:30 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:30 bilby WARNING : Axis limits cannot be NaN or Inf
+20:30 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:40 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+20:40 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+20:40 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:40 bilby WARNING : Axis limits cannot be NaN or Inf
+20:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:51 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+20:51 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+20:51 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:51 bilby WARNING : Axis limits cannot be NaN or Inf
+20:51 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:02 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+21:02 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+21:02 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:02 bilby WARNING : Axis limits cannot be NaN or Inf
+21:02 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:13 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+21:13 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+21:13 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:13 bilby WARNING : Axis limits cannot be NaN or Inf
+21:13 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:24 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+21:24 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+21:24 bilby WARNING : Failed to create dynesty state plot at checkpoint
+21:24 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+21:24 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+21:24 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+21:24 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:35 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+21:35 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+21:35 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:35 bilby WARNING : Axis limits cannot be NaN or Inf
+21:35 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:46 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+21:46 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+21:46 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:46 bilby WARNING : Axis limits cannot be NaN or Inf
+21:46 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:56 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+21:56 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+21:56 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:57 bilby WARNING : Axis limits cannot be NaN or Inf
+21:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:07 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+22:07 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+22:07 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:07 bilby WARNING : Axis limits cannot be NaN or Inf
+22:07 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:18 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+22:18 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+22:18 bilby WARNING : Failed to create dynesty state plot at checkpoint
+22:18 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+22:18 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+22:18 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+22:18 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:28 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+22:28 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+22:28 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:28 bilby WARNING : Axis limits cannot be NaN or Inf
+22:28 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:39 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+22:39 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+22:39 bilby WARNING : Failed to create dynesty state plot at checkpoint
+22:39 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+22:39 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+22:39 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+22:39 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:50 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+22:50 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+22:50 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:50 bilby WARNING : Axis limits cannot be NaN or Inf
+22:50 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:00 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+23:00 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+23:00 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:00 bilby WARNING : Axis limits cannot be NaN or Inf
+23:00 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:10 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+23:10 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+23:10 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:11 bilby WARNING : Axis limits cannot be NaN or Inf
+23:11 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:22 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+23:22 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+23:22 bilby WARNING : Failed to create dynesty state plot at checkpoint
+23:22 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+23:22 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+23:22 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+23:22 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:32 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+23:32 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+23:32 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:32 bilby WARNING : Axis limits cannot be NaN or Inf
+23:32 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:42 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+23:42 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+23:42 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:42 bilby WARNING : Axis limits cannot be NaN or Inf
+23:42 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:53 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+23:53 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+23:53 bilby WARNING : Failed to create dynesty state plot at checkpoint
+23:53 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+23:53 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+23:53 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+23:53 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:04 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+00:04 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:04 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:04 bilby WARNING : Axis limits cannot be NaN or Inf
+00:04 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:15 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+00:15 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:15 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:15 bilby WARNING : Axis limits cannot be NaN or Inf
+00:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:25 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+00:25 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:25 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:25 bilby WARNING : Axis limits cannot be NaN or Inf
+00:25 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:35 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+00:35 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:35 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:35 bilby WARNING : Axis limits cannot be NaN or Inf
+00:35 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:45 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+00:45 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:45 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:45 bilby WARNING : Axis limits cannot be NaN or Inf
+00:45 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:56 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+00:56 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:56 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:56 bilby WARNING : Axis limits cannot be NaN or Inf
+00:56 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:06 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:06 bilby WARNING : Axis limits cannot be NaN or Inf
+01:06 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:16 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+01:16 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+01:16 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:16 bilby WARNING : Axis limits cannot be NaN or Inf
+01:16 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:26 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+01:26 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+01:26 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:26 bilby WARNING : Axis limits cannot be NaN or Inf
+01:26 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:36 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+01:36 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+01:36 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:37 bilby WARNING : Axis limits cannot be NaN or Inf
+01:37 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:47 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+01:47 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+01:47 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:47 bilby WARNING : Axis limits cannot be NaN or Inf
+01:47 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:57 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+01:57 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+01:57 bilby WARNING : Failed to create dynesty state plot at checkpoint
+01:57 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+01:57 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+01:57 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+01:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:07 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+02:07 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+02:07 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:07 bilby WARNING : Axis limits cannot be NaN or Inf
+02:07 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:18 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+02:18 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+02:18 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:18 bilby WARNING : Axis limits cannot be NaN or Inf
+02:18 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:28 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:28 bilby WARNING : Axis limits cannot be NaN or Inf
+02:28 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:38 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:38 bilby WARNING : Axis limits cannot be NaN or Inf
+02:38 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:49 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:49 bilby WARNING : Axis limits cannot be NaN or Inf
+02:49 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:59 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:59 bilby WARNING : Axis limits cannot be NaN or Inf
+02:59 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:09 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:09 bilby WARNING : Axis limits cannot be NaN or Inf
+03:09 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:19 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+03:19 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+03:19 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:19 bilby WARNING : Axis limits cannot be NaN or Inf
+03:19 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:29 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+03:29 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+03:29 bilby WARNING : Failed to create dynesty state plot at checkpoint
+03:29 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+03:29 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+03:29 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+03:29 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:40 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:40 bilby WARNING : Axis limits cannot be NaN or Inf
+03:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:50 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:50 bilby WARNING : Axis limits cannot be NaN or Inf
+03:50 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:00 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:00 bilby WARNING : Axis limits cannot be NaN or Inf
+04:00 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:11 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+04:11 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+04:11 bilby WARNING : Failed to create dynesty state plot at checkpoint
+04:11 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+04:11 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+04:11 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+04:11 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:21 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+04:21 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+04:21 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:21 bilby WARNING : Axis limits cannot be NaN or Inf
+04:21 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:31 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:31 bilby WARNING : Axis limits cannot be NaN or Inf
+04:31 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:42 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+04:42 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+04:42 bilby WARNING : Failed to create dynesty state plot at checkpoint
+04:42 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+04:42 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+04:42 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+04:42 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:52 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+04:52 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+04:52 bilby WARNING : Failed to create dynesty state plot at checkpoint
+04:52 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+04:52 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+04:52 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+04:52 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:02 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+05:02 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+05:02 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:02 bilby WARNING : Axis limits cannot be NaN or Inf
+05:02 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:12 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+05:12 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+05:12 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:12 bilby WARNING : Axis limits cannot be NaN or Inf
+05:12 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:23 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:23 bilby WARNING : Axis limits cannot be NaN or Inf
+05:23 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:33 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:33 bilby WARNING : Axis limits cannot be NaN or Inf
+05:33 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:43 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+05:43 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+05:43 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:43 bilby WARNING : Axis limits cannot be NaN or Inf
+05:43 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:53 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+05:53 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+05:53 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:53 bilby WARNING : Axis limits cannot be NaN or Inf
+05:53 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:04 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+06:04 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+06:04 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:04 bilby WARNING : Axis limits cannot be NaN or Inf
+06:04 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:14 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+06:14 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+06:14 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:14 bilby WARNING : Axis limits cannot be NaN or Inf
+06:14 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:24 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+06:24 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+06:24 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:24 bilby WARNING : Axis limits cannot be NaN or Inf
+06:24 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:34 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+06:35 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+06:35 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:35 bilby WARNING : Axis limits cannot be NaN or Inf
+06:35 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:45 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+06:45 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+06:45 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:45 bilby WARNING : Axis limits cannot be NaN or Inf
+06:45 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:55 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+06:55 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+06:55 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:55 bilby WARNING : Axis limits cannot be NaN or Inf
+06:55 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:05 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+07:05 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+07:05 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:05 bilby WARNING : Axis limits cannot be NaN or Inf
+07:05 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:15 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+07:15 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+07:15 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:15 bilby WARNING : Axis limits cannot be NaN or Inf
+07:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:26 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+07:26 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+07:26 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:26 bilby WARNING : Axis limits cannot be NaN or Inf
+07:26 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:36 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+07:36 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+07:36 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:36 bilby WARNING : Axis limits cannot be NaN or Inf
+07:36 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:46 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+07:46 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+07:46 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:46 bilby WARNING : Axis limits cannot be NaN or Inf
+07:46 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:57 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+07:57 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+07:57 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:57 bilby WARNING : Axis limits cannot be NaN or Inf
+07:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:07 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+08:07 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:07 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:07 bilby WARNING : Axis limits cannot be NaN or Inf
+08:07 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:17 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+08:17 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:17 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:17 bilby WARNING : Axis limits cannot be NaN or Inf
+08:17 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:28 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+08:28 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:28 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:28 bilby WARNING : Axis limits cannot be NaN or Inf
+08:28 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:38 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+08:38 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:38 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:38 bilby WARNING : Axis limits cannot be NaN or Inf
+08:38 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:48 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+08:48 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:48 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:48 bilby WARNING : Axis limits cannot be NaN or Inf
+08:48 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:58 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+08:58 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:58 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:58 bilby WARNING : Axis limits cannot be NaN or Inf
+08:58 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:09 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+09:09 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:09 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:09 bilby WARNING : Axis limits cannot be NaN or Inf
+09:09 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:19 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+09:19 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:19 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:19 bilby WARNING : Axis limits cannot be NaN or Inf
+09:19 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:29 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+09:29 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:29 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:29 bilby WARNING : Axis limits cannot be NaN or Inf
+09:29 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:40 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+09:40 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:40 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:40 bilby WARNING : Axis limits cannot be NaN or Inf
+09:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:50 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+09:50 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:50 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:50 bilby WARNING : Axis limits cannot be NaN or Inf
+09:50 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:56 bilby INFO    : Written checkpoint file results/15/None_resume.pickle
+09:56 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:56 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/ligo/home/ligo.org/pratyusava.baral/dispersion/dispersion_env/lib64/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:56 bilby WARNING : Axis limits cannot be NaN or Inf
+09:56 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:56 bilby INFO    : Starting to close worker pool.
+09:56 bilby INFO    : Finished closing worker pool.
+09:56 bilby INFO    : Rejection sampling nested samples to obtain 2827 posterior samples
+09:56 bilby INFO    : Sampling time: 18:52:36.702041
+09:56 bilby INFO    : Summary of results:
+nsamples: 2827
+ln_noise_evidence: -562863.190
+ln_evidence: -64.779 +/-  0.352
+ln_bayes_factor: 562798.411 +/-  0.352
+
