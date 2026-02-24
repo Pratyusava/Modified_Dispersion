@@ -187,7 +187,8 @@ priors["mass_ratio"] = bilby.core.prior.Uniform(name='mass_ratio', minimum=max(0
 # priors["chi_1"] = bilby.core.prior.Uniform(name='chi_1', minimum=chi_1 - 3*options.chi_1_sigma, maximum=chi_1 + 3*options.chi_1_sigma)
 # priors["chi_2"] = bilby.core.prior.Uniform(name='chi_2', minimum=chi_2 - 3*options.chi_2_sigma, maximum=chi_2 + 3*options.chi_2_sigma)
 priors["a"] = options.a
-priors['A'] = bilby.core.prior.Uniform(name='A', minimum=-1, maximum=1)
+#priors['A'] = bilby.core.prior.Uniform(name='A', minimum=-1, maximum=1)
+priors['A'] = bilby.core.prior.SymmetricLogUniform(name='A', minimum=1e-5, maximum=1e-2)
 
 priors["luminosity_distance"] = bilby.core.prior.Uniform(name='luminosity_distance', minimum=max(10, luminosity_distance - 3*options.luminosity_distance_sigma), maximum=luminosity_distance + 3*options.luminosity_distance_sigma)
 
