@@ -92,7 +92,7 @@ luminosity_distance = options.luminosity_distance
 a = options.a
 
 injection_parameters = dict(
-    chirp_mass=chirp_mass, mass_ratio=mass_ratio, chi_1=0., chi_2=0.,
+    chirp_mass=chirp_mass, mass_ratio=mass_ratio, chi_1=chi_1, chi_2=chi_2,
     ra=ra, dec=dec, luminosity_distance = luminosity_distance,
     theta_jn=theta_jn, psi=psi, phase=phase, geocent_time=geocent_time, a=a , A=0, fiducial=1,
 )
