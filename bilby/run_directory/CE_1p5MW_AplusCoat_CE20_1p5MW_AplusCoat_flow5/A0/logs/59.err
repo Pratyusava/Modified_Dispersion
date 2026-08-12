@@ -1,50 +1,50 @@
-15:40 bilby INFO    : Waveform generator initiated with
+20:28 bilby INFO    : Waveform generator initiated with
   frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_individual_modes
   time_domain_source_model: None
   parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
 /scratch2/ligo.org/pratyusava.baral/dispersion/dispersion_env/src/bilby-x-g/bilby/gw/detector/interferometer.py:483: RuntimeWarning: divide by zero encountered in scalar power
   lambda_A = h * np.abs(A) ** (1/(a-2))
-15:40 bilby INFO    : No prior given, using default BNS priors in /scratch2/ligo.org/pratyusava.baral/dispersion/dispersion_env/src/bilby-x-g/bilby/gw/prior_files/aligned_spins_bns_tides_on.prior.
-15:40 bilby INFO    : Running for label 'None', output will be saved to 'results/59'
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby WARNING : Parameter fiducial has no default prior and is set to 0, this will not be sampled and may cause an error.
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-15:40 bilby INFO    : Using lal version 7.7.0
-15:40 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.26.1;Id: c90e1175f5e238741185744a4e516e58d42a9aec;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
-15:40 bilby INFO    : Using lalsimulation version 6.2.0
-15:40 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.26.1;Id: c90e1175f5e238741185744a4e516e58d42a9aec;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
-15:40 bilby INFO    : Analysis priors:
-15:40 bilby INFO    : mass_ratio=Uniform(minimum=0.125, maximum=0.6444434867052422, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
-15:40 bilby INFO    : chirp_mass=Uniform(minimum=18.634712363183173, maximum=18.694712363183175, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
-15:40 bilby INFO    : luminosity_distance=Uniform(minimum=613.4049271131679, maximum=703.4049271131679, name='luminosity_distance', latex_label='$d_L$', unit=None, boundary=None)
-15:40 bilby INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
-15:40 bilby INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
-15:40 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
-15:40 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
-15:40 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
-15:40 bilby INFO    : chi_1=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_1', latex_label='$\\chi_1$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
-15:40 bilby INFO    : chi_2=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_2', latex_label='$\\chi_2$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
-15:40 bilby INFO    : A=SymmetricLogUniform(minimum=1e-05, maximum=0.01, name='A', latex_label='A', unit=None, boundary=None)
-15:40 bilby INFO    : CE_time=Uniform(minimum=1922913660.9399188, maximum=1922913660.9599187, name='CE_time', latex_label='$t_{CE}$', unit='$s$', boundary=None)
-15:40 bilby INFO    : a=0
-15:40 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.relative.RelativeBinningGravitationalWaveTransientNextGenerationModebyMode'>
-15:40 bilby INFO    : Analysis likelihood noise evidence: -256240.7027552922
-15:40 bilby INFO    : Single likelihood evaluation took 1.333e-01 s
-15:40 bilby INFO    : Checkpoint every check_point_delta_t = 600s
-15:40 bilby WARNING : Using cached result
-15:40 bilby INFO    : Summary of results:
+20:28 bilby INFO    : No prior given, using default BNS priors in /scratch2/ligo.org/pratyusava.baral/dispersion/dispersion_env/src/bilby-x-g/bilby/gw/prior_files/aligned_spins_bns_tides_on.prior.
+20:28 bilby INFO    : Running for label 'None', output will be saved to 'results/59'
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby WARNING : Parameter fiducial has no default prior and is set to 0, this will not be sampled and may cause an error.
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+20:28 bilby INFO    : Using lal version 7.7.0
+20:28 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.26.1;Id: c90e1175f5e238741185744a4e516e58d42a9aec;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+20:28 bilby INFO    : Using lalsimulation version 6.2.0
+20:28 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.26.1;Id: c90e1175f5e238741185744a4e516e58d42a9aec;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+20:29 bilby INFO    : Analysis priors:
+20:29 bilby INFO    : mass_ratio=Uniform(minimum=0.125, maximum=0.6444434867052422, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+20:29 bilby INFO    : chirp_mass=Uniform(minimum=18.634712363183173, maximum=18.694712363183175, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+20:29 bilby INFO    : luminosity_distance=Uniform(minimum=613.4049271131679, maximum=703.4049271131679, name='luminosity_distance', latex_label='$d_L$', unit=None, boundary=None)
+20:29 bilby INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+20:29 bilby INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+20:29 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+20:29 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+20:29 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
+20:29 bilby INFO    : chi_1=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_1', latex_label='$\\chi_1$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
+20:29 bilby INFO    : chi_2=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_2', latex_label='$\\chi_2$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
+20:29 bilby INFO    : A=SymmetricLogUniform(minimum=1e-05, maximum=0.01, name='A', latex_label='A', unit=None, boundary=None)
+20:29 bilby INFO    : CE_time=Uniform(minimum=1922913660.9399188, maximum=1922913660.9599187, name='CE_time', latex_label='$t_{CE}$', unit='$s$', boundary=None)
+20:29 bilby INFO    : a=0
+20:29 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.relative.RelativeBinningGravitationalWaveTransientNextGenerationModebyMode'>
+20:29 bilby INFO    : Analysis likelihood noise evidence: -256240.7027552922
+20:29 bilby INFO    : Single likelihood evaluation took 1.178e-01 s
+20:29 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+20:29 bilby WARNING : Using cached result
+20:29 bilby INFO    : Summary of results:
 nsamples: 2725
 ln_noise_evidence: -256240.703
 ln_evidence: -60.976 +/-  0.341

@@ -46375,7 +46375,10 @@
     "a"
   ],
   "constraint_parameter_keys": [],
-  "sampling_time": 300505.910388,
+  "sampling_time": {
+    "__timedelta__": true,
+    "__total_seconds__": 300505.910388
+  },
   "sampler_kwargs": {
     "nlive": 500,
     "bound": "live",

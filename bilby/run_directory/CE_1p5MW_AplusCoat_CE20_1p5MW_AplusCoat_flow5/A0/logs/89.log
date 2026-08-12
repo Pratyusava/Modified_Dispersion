@@ -1433,3 +1433,39 @@
 	   TimeExecute (s)      :    47                       
 	   TimeSlotBusy (s)     :    47                       
 ...
+000 (48212215.089.000) 2026-07-08 20:28:24 Job submitted from host: <146.186.150.67:9618?CCBID=10.6.200.15:9618%3fPrivNet%3dGWAVE%26addrs%3d10.6.200.15-9618%26alias%3dligo-ad-01.gwave.ics.psu.edu%26noUDP%26sock%3dcollector#250287&PrivAddr=%3c146.186.150.67:9618%3fsock%3dschedd_13118_6f74%3e&PrivNet=GWAVE&addrs=146.186.150.67-9618&alias=ligo-hd-02.gwave.ics.psu.edu&noUDP&sock=schedd_13118_6f74>
+...
+001 (48212215.089.000) 2026-07-08 20:28:44 Job executing on host: <10.6.203.189:9618?alias=comp-ex-0685.gwave.ics.psu.edu&sock=startd_9726_ce35>
+	SlotName: slot1_5@comp-ex-0685.gwave.ics.psu.edu
+	CondorScratchDir = "/localscratch/condor/execute/dir_4107332/scratch"
+	Cpus = 4
+	Disk = 2048
+	GPUs = 0
+	Memory = 20096
+...
+006 (48212215.089.000) 2026-07-08 20:28:53 Image size of job updated: 141548
+	139  -  MemoryUsage of job (MB)
+	141548  -  ResidentSetSize of job (KB)
+...
+006 (48212215.089.000) 2026-07-08 20:29:34 Image size of job updated: 598828
+	139  -  MemoryUsage of job (MB)
+	141560  -  ResidentSetSize of job (KB)
+...
+005 (48212215.089.000) 2026-07-08 20:29:34 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:29, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:29, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     0.15        4         4 
+	   Disk (KB)            :    10        2000      2048 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   139       20000     20096 
+	   TimeExecute (s)      :    50                       
+	   TimeSlotBusy (s)     :    50                       
+...
