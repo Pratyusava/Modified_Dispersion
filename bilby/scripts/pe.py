@@ -8,6 +8,7 @@ import optparse
 import os
 import json
 import pickle
+import hashlib
 
 # parse commands
 parser = optparse.OptionParser()
@@ -57,17 +58,46 @@ parser.add_option("--CE20", action="store_true", default=False)
 parser.add_option("--waveformname", type = 'string', default = 'IMRPhenomXPHM')
 parser.add_option("--nact", dest="nact", type="float", default=5.)
 parser.add_option("--mode_array_injection", type='string' )
+parser.add_option("--npool", type="int", default=4,
+                  help="sampler worker processes; keep equal to condor request_cpus")
+parser.add_option("--prior_nsigma", type="float", default=3.,
+                  help="half-width of the chirp_mass/mass_ratio/distance prior boxes, in units of the supplied Fisher sigmas")
+parser.add_option("--time_prior_halfwidth", type="float", default=0.001,
+                  help="half-width [s] of the arrival-time prior; posteriors use <0.12 ms and corr(A, t)~0, so 1 ms is >9 sigma for the worst event")
+parser.add_option("--asd_CE40high", action="store_true", default=False, help="use the 1.5 MW CE40 ASD (default)")
+parser.add_option("--asd_CE40low", action="store_true", default=False, help="use the 1.0 MW CE40 ASD")
+parser.add_option("--asd_CE20high", action="store_true", default=False, help="use the 1.5 MW CE20 ASD (default)")
+parser.add_option("--asd_CE20low", action="store_true", default=False, help="use the 1.0 MW CE20 ASD")
+parser.add_option("--asd_A1", type="string", default='/ligo/home/ligo.org/pratyusava.baral/dispersion/asd/Aplus_asd.txt')
 
 
 
 (options, args) = parser.parse_args()
 
-np.random.seed(options.randomseed)
+required = ["chirp_mass", "chirp_mass_sigma", "mass_ratio", "mass_ratio_sigma",
+            "luminosity_distance", "luminosity_distance_sigma", "chi_1", "chi_2",
+            "ra", "dec", "theta_jn", "phase", "geocent_time", "psi"]
+missing = [k for k in required if getattr(options, k) is None]
+if missing:
+    parser.error("missing required options: " + ", ".join("--" + k for k in missing))
 
-outdir = options.outdir 
+# resolve detector sensitivities (default: high = 1.5 MW laser power)
+if options.asd_CE40high and options.asd_CE40low:
+    parser.error("--asd_CE40high and --asd_CE40low are mutually exclusive")
+if options.asd_CE20high and options.asd_CE20low:
+    parser.error("--asd_CE20high and --asd_CE20low are mutually exclusive")
+ASD_DIR = '/ligo/home/ligo.org/pratyusava.baral/dispersion/asd'
+asd_CE40 = f"{ASD_DIR}/CE40km_{'1p0' if options.asd_CE40low else '1p5'}MW_aLIGO_coat_strain.txt"
+asd_CE20 = f"{ASD_DIR}/CE20km_{'1p0' if options.asd_CE20low else '1p5'}MW_aLIGO_coat_strain.txt"
+print(f"CE40 ASD: {asd_CE40}")
 
-if not os.path.exists(outdir):
-    os.mkdir(outdir)
+# offset the seed by the event time: reproducible per event, but sampler
+# randomness is not shared across the whole injection campaign
+np.random.seed((options.randomseed + int(options.geocent_time)) % 2**32)
+
+outdir = options.outdir
+
+os.makedirs(outdir, exist_ok=True)
 
 
 mode_array = json.loads(str(options.mode_array))
@@ -115,7 +145,7 @@ waveform_generator = bilby.gw.WaveformGenerator(
     parameter_conversion=bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters,
     waveform_arguments=dict(waveform_approximant=waveformname, reference_frequency=reference_frequency, minimum_frequency=minimum_frequency, mode_array=mode_array_injection))
 
-frequencies_asd, strain_asd = np.loadtxt('/ligo/home/ligo.org/pratyusava.baral/dispersion/asd/CE40km_1p5MW_aLIGO_coat_strain.txt', unpack=True)
+frequencies_asd, strain_asd = np.loadtxt(asd_CE40, unpack=True)
         
 ifos = []
 ifo = bilby.gw.detector.load_interferometer('/ligo/home/ligo.org/pratyusava.baral/dispersion/detector_configurations/bilby/CE40.ifo')
@@ -126,7 +156,7 @@ ifo.power_spectral_density = bilby.gw.detector.PowerSpectralDensity(
 ifos.append(ifo)
 
 if options.A1:
-    frequencies_asd, strain_asd = np.loadtxt('/ligo/home/ligo.org/pratyusava.baral/dispersion/asd/Aplus_asd.txt', unpack=True)
+    frequencies_asd, strain_asd = np.loadtxt(options.asd_A1, unpack=True)
     ifo = bilby.gw.detector.load_interferometer('/ligo/home/ligo.org/pratyusava.baral/dispersion/detector_configurations/bilby/A1.ifo')
     ifo.power_spectral_density = bilby.gw.detector.PowerSpectralDensity(
             frequency_array=frequencies_asd,
@@ -135,7 +165,8 @@ if options.A1:
     ifos.append(ifo)
 
 if options.CE20:
-    frequencies_asd, strain_asd = np.loadtxt('/ligo/home/ligo.org/pratyusava.baral/dispersion/asd/CE20km_1p5MW_aLIGO_coat_strain.txt', unpack=True)
+    print(f"CE20 ASD: {asd_CE20}")
+    frequencies_asd, strain_asd = np.loadtxt(asd_CE20, unpack=True)
     ifo = bilby.gw.detector.load_interferometer('/ligo/home/ligo.org/pratyusava.baral/dispersion/detector_configurations/bilby/CE20.ifo')
     ifo.power_spectral_density = bilby.gw.detector.PowerSpectralDensity(
             frequency_array=frequencies_asd,
@@ -144,20 +175,20 @@ if options.CE20:
     ifos.append(ifo)
     
 
+frequencies = waveform_generator.frequency_array
+idxs_above_minimum_frequency = frequencies > (minimum_frequency - (frequencies[1] - frequencies[0]))
+freqs = frequencies[idxs_above_minimum_frequency]
+
+converted_injection_parameters, _ = waveform_generator.parameter_conversion(injection_parameters)
+waveform_polarizations = waveform_generator.frequency_domain_strain(converted_injection_parameters)
+waveform_polarizations_reduced = {}
+
+for key in waveform_polarizations.keys():
+    waveform_polarizations_reduced[key] = {}
+    waveform_polarizations_reduced[key]['plus'] = waveform_polarizations[key]['plus'][idxs_above_minimum_frequency]
+    waveform_polarizations_reduced[key]['cross'] = waveform_polarizations[key]['cross'][idxs_above_minimum_frequency]
+
 for ifo in ifos:
-    frequencies = waveform_generator.frequency_array
-    idxs_above_minimum_frequency = frequencies > (minimum_frequency - (frequencies[1] - frequencies[0]))
-    freqs = frequencies[idxs_above_minimum_frequency]
-
-    converted_injection_parameters, _ = waveform_generator.parameter_conversion(injection_parameters)
-    waveform_polarizations = waveform_generator.frequency_domain_strain(converted_injection_parameters) 
-    waveform_polarizations_reduced = {}
-
-    for key in waveform_polarizations.keys():
-        waveform_polarizations_reduced[key] = {}
-        waveform_polarizations_reduced[key]['plus'] = waveform_polarizations[key]['plus'][idxs_above_minimum_frequency]
-        waveform_polarizations_reduced[key]['cross'] = waveform_polarizations[key]['cross'][idxs_above_minimum_frequency]
-
     h = np.zeros_like(waveform_generator.frequency_array, dtype=complex)
     h[idxs_above_minimum_frequency] = ifo.get_detector_response_for_frequency_dependent_antenna_response(
         waveform_polarizations = waveform_polarizations_reduced,
@@ -182,15 +213,24 @@ priors = bilby.gw.prior.BNSPriorDict()
 for key in ["mass_1", "mass_2", "lambda_1", "lambda_2"]:
     priors.pop(key)
 
-priors["chirp_mass"] = bilby.core.prior.Uniform(name='chirp_mass', minimum=chirp_mass - 3*options.chirp_mass_sigma, maximum=chirp_mass + 3*options.chirp_mass_sigma)
-priors["mass_ratio"] = bilby.core.prior.Uniform(name='mass_ratio', minimum=max(0.125, mass_ratio - 3*options.mass_ratio_sigma), maximum=min(1,mass_ratio + 3*options.mass_ratio_sigma))
+# prior boxes at injected value +/- prior_nsigma Fisher sigmas; the Fisher
+# sigmas assume a unimodal posterior around the truth, so a degenerate
+# (mirror sky/inclination) mode can rail against these edges if too narrow
+ns = options.prior_nsigma
+priors["chirp_mass"] = bilby.core.prior.Uniform(name='chirp_mass', minimum=chirp_mass - ns*options.chirp_mass_sigma, maximum=chirp_mass + ns*options.chirp_mass_sigma)
+priors["mass_ratio"] = bilby.core.prior.Uniform(name='mass_ratio', minimum=max(0.125, mass_ratio - ns*options.mass_ratio_sigma), maximum=min(1,mass_ratio + ns*options.mass_ratio_sigma))
 # priors["chi_1"] = bilby.core.prior.Uniform(name='chi_1', minimum=chi_1 - 3*options.chi_1_sigma, maximum=chi_1 + 3*options.chi_1_sigma)
 # priors["chi_2"] = bilby.core.prior.Uniform(name='chi_2', minimum=chi_2 - 3*options.chi_2_sigma, maximum=chi_2 + 3*options.chi_2_sigma)
 priors["a"] = options.a
+# NOTE: the injected value A=0 lies OUTSIDE this prior's support (|A| >= 1e-5).
+# Deliberate: this is a null test quoting upper limits, and the sampler does
+# not converge with a Uniform prior on A. Consequences: the posterior can
+# never concentrate on the truth, and P-P/coverage tests on A are meaningless.
+# For a flat-in-A statement, reweight samples by |A| (see combine_posterior.py).
 #priors['A'] = bilby.core.prior.Uniform(name='A', minimum=-1, maximum=1)
 priors['A'] = bilby.core.prior.SymmetricLogUniform(name='A', minimum=1e-5, maximum=1e-2)
 
-priors["luminosity_distance"] = bilby.core.prior.Uniform(name='luminosity_distance', minimum=max(10, luminosity_distance - 3*options.luminosity_distance_sigma), maximum=luminosity_distance + 3*options.luminosity_distance_sigma)
+priors["luminosity_distance"] = bilby.core.prior.Uniform(name='luminosity_distance', minimum=max(10, luminosity_distance - ns*options.luminosity_distance_sigma), maximum=luminosity_distance + ns*options.luminosity_distance_sigma)
 
 
 if options.sample_CE_arrival_time:
@@ -199,21 +239,29 @@ if options.sample_CE_arrival_time:
         ra=injection_parameters['ra'], dec=injection_parameters['dec'], time=injection_parameters['geocent_time'])
     #print (freqs[-1], frequencies[-1])
     priors['CE_time'] = bilby.core.prior.Uniform(
-        minimum=injection_parameters["CE_time"] - 0.01,
-        maximum=injection_parameters["CE_time"] + 0.01,
+        minimum=injection_parameters["CE_time"] - options.time_prior_halfwidth,
+        maximum=injection_parameters["CE_time"] + options.time_prior_halfwidth,
         name='CE_time', latex_label='$t_{CE}$', unit='$s$'
     )
 else:
     priors['geocent_time'] = bilby.core.prior.Uniform(
-        minimum=injection_parameters['geocent_time'] - 0.1,
-        maximum=injection_parameters['geocent_time'] + 0.1,
+        minimum=injection_parameters['geocent_time'] - options.time_prior_halfwidth,
+        maximum=injection_parameters['geocent_time'] + options.time_prior_halfwidth,
         name='geocent_time', latex_label='$t_c$', unit='$s$'
     )
 
 # set up likelihood
-distance_marginalization=False
-phase_marginalization=False
-path_to_likelihood = os.path.join(outdir, f"likelihood_{options.label}.pickle")
+# tie the pickle filename to everything that defines the likelihood, so a
+# stale pickle from a different configuration is never silently reused on
+# restart (sampler-only settings excluded: they don't change the likelihood)
+sampler_only = {"nlive", "walks", "maxmcmc", "dlogz", "nact", "npool",
+                "outdir", "randomseed", "label"}
+likelihood_config = {k: v for k, v in sorted(options.__dict__.items())
+                     if k not in sampler_only}
+likelihood_config["injection_parameters"] = injection_parameters
+config_hash = hashlib.md5(json.dumps(likelihood_config, sort_keys=True,
+                                     default=str).encode()).hexdigest()[:8]
+path_to_likelihood = os.path.join(outdir, f"likelihood_{options.label}_{config_hash}.pickle")
 
 # print (0)
 
@@ -248,17 +296,12 @@ if not os.path.exists(path_to_likelihood):
     )
     pickle.dump(likelihood_RB, open(path_to_likelihood, "wb"))
 else:
-    # print ('Reuse')
     likelihood_RB = pickle.load(open(path_to_likelihood, "rb"))
-    if distance_marginalization:
-        priors['luminosity_distance'] = float(priors['luminosity_distance'].rescale(0.5))
-    if phase_marginalization:
-        priors["phase"] = 0.0
 
 
 result = bilby.run_sampler(
     likelihood=likelihood_RB, priors=priors, sampler='dynesty', use_ratio=True,
-    nlive=options.nlive, walks=options.walks, maxmcmc=options.maxmcmc, naccept=options.nact, npool=16,
+    nlive=options.nlive, walks=options.walks, maxmcmc=options.maxmcmc, naccept=options.nact, npool=options.npool,
     injection_parameters=injection_parameters, sample = 'acceptance-walk',
     outdir=outdir, label=options.label, dlogz=options.dlogz)#FIXME 
   
