@@ -259,7 +259,9 @@ config_hash = hashlib.md5(json.dumps(likelihood_config, sort_keys=True,
                                      default=str).encode()).hexdigest()[:8]
 path_to_likelihood = os.path.join(outdir, f"likelihood_{options.label}_{config_hash}.pickle")
 
-# print (0)
+# the sampler must evaluate the RB source on the bin edges (fiducial=0);
+# set it on both paths so a cached-pickle restart samples identically
+priors['fiducial'] = 0
 
 if not os.path.exists(path_to_likelihood):
     # print (waveformname)
@@ -269,8 +271,6 @@ if not os.path.exists(path_to_likelihood):
     parameter_conversion=bilby.gw.conversion.convert_to_lal_binary_neutron_star_parameters,
     waveform_arguments=dict(waveform_approximant=waveformname, reference_frequency=reference_frequency, minimum_frequency=minimum_frequency, mode_array=mode_array))
 
-    priors['fiducial'] = 0    
-    
     if options.sample_CE_arrival_time:
         time_reference = "CE"
     else:
