@@ -19,9 +19,7 @@ parser.add_option("--mass_ratio_sigma", dest="mass_ratio_sigma", type="float")
 parser.add_option("--luminosity_distance", dest="luminosity_distance", type="float")
 parser.add_option("--luminosity_distance_sigma", dest="luminosity_distance_sigma", type="float")
 parser.add_option("--chi_1", dest="chi_1", type="float")
-parser.add_option("--chi_1_sigma", dest="chi_1_sigma", type="float")
 parser.add_option("--chi_2", dest="chi_2", type="float")
-parser.add_option("--chi_2_sigma", dest="chi_2_sigma", type="float")
 parser.add_option("--ra", dest="ra", type="float")
 parser.add_option("--dec", dest="dec", type="float")
 parser.add_option("--theta_jn", dest="theta_jn", type="float")
@@ -219,8 +217,6 @@ for key in ["mass_1", "mass_2", "lambda_1", "lambda_2"]:
 ns = options.prior_nsigma
 priors["chirp_mass"] = bilby.core.prior.Uniform(name='chirp_mass', minimum=chirp_mass - ns*options.chirp_mass_sigma, maximum=chirp_mass + ns*options.chirp_mass_sigma)
 priors["mass_ratio"] = bilby.core.prior.Uniform(name='mass_ratio', minimum=max(0.125, mass_ratio - ns*options.mass_ratio_sigma), maximum=min(1,mass_ratio + ns*options.mass_ratio_sigma))
-# priors["chi_1"] = bilby.core.prior.Uniform(name='chi_1', minimum=chi_1 - 3*options.chi_1_sigma, maximum=chi_1 + 3*options.chi_1_sigma)
-# priors["chi_2"] = bilby.core.prior.Uniform(name='chi_2', minimum=chi_2 - 3*options.chi_2_sigma, maximum=chi_2 + 3*options.chi_2_sigma)
 priors["a"] = options.a
 # NOTE: the injected value A=0 lies OUTSIDE this prior's support (|A| >= 1e-5).
 # Deliberate: this is a null test quoting upper limits, and the sampler does
