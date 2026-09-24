@@ -62,6 +62,10 @@ parser.add_option("--prior_nsigma", type="float", default=3.,
                   help="half-width of the chirp_mass/mass_ratio/distance prior boxes, in units of the supplied Fisher sigmas")
 parser.add_option("--time_prior_halfwidth", type="float", default=0.001,
                   help="half-width [s] of the arrival-time prior; posteriors use <0.12 ms and corr(A, t)~0, so 1 ms is >9 sigma for the worst event")
+parser.add_option("--A_min", type="float", default=1e-5,
+                  help="lower edge of the SymmetricLogUniform prior on |A| (units 1e-21 peV^(2-a))")
+parser.add_option("--A_max", type="float", default=1e-2,
+                  help="upper edge of the SymmetricLogUniform prior on |A| (units 1e-21 peV^(2-a))")
 parser.add_option("--asd_CE40high", action="store_true", default=False, help="use the 1.5 MW CE40 ASD (default)")
 parser.add_option("--asd_CE40low", action="store_true", default=False, help="use the 1.0 MW CE40 ASD")
 parser.add_option("--asd_CE20high", action="store_true", default=False, help="use the 1.5 MW CE20 ASD (default)")
@@ -84,6 +88,8 @@ if options.asd_CE40high and options.asd_CE40low:
     parser.error("--asd_CE40high and --asd_CE40low are mutually exclusive")
 if options.asd_CE20high and options.asd_CE20low:
     parser.error("--asd_CE20high and --asd_CE20low are mutually exclusive")
+if not 0 < options.A_min < options.A_max:
+    parser.error("need 0 < --A_min < --A_max")
 ASD_DIR = '/ligo/home/ligo.org/pratyusava.baral/dispersion/asd'
 asd_CE40 = f"{ASD_DIR}/CE40km_{'1p0' if options.asd_CE40low else '1p5'}MW_aLIGO_coat_strain.txt"
 asd_CE20 = f"{ASD_DIR}/CE20km_{'1p0' if options.asd_CE20low else '1p5'}MW_aLIGO_coat_strain.txt"
@@ -218,13 +224,13 @@ ns = options.prior_nsigma
 priors["chirp_mass"] = bilby.core.prior.Uniform(name='chirp_mass', minimum=chirp_mass - ns*options.chirp_mass_sigma, maximum=chirp_mass + ns*options.chirp_mass_sigma)
 priors["mass_ratio"] = bilby.core.prior.Uniform(name='mass_ratio', minimum=max(0.125, mass_ratio - ns*options.mass_ratio_sigma), maximum=min(1,mass_ratio + ns*options.mass_ratio_sigma))
 priors["a"] = options.a
-# NOTE: the injected value A=0 lies OUTSIDE this prior's support (|A| >= 1e-5).
+# NOTE: the injected value A=0 lies OUTSIDE this prior's support (|A| >= --A_min).
 # Deliberate: this is a null test quoting upper limits, and the sampler does
 # not converge with a Uniform prior on A. Consequences: the posterior can
 # never concentrate on the truth, and P-P/coverage tests on A are meaningless.
 # For a flat-in-A statement, reweight samples by |A| (see combine_posterior.py).
 #priors['A'] = bilby.core.prior.Uniform(name='A', minimum=-1, maximum=1)
-priors['A'] = bilby.core.prior.SymmetricLogUniform(name='A', minimum=1e-5, maximum=1e-2)
+priors['A'] = bilby.core.prior.SymmetricLogUniform(name='A', minimum=options.A_min, maximum=options.A_max)
 
 priors["luminosity_distance"] = bilby.core.prior.Uniform(name='luminosity_distance', minimum=max(10, luminosity_distance - ns*options.luminosity_distance_sigma), maximum=luminosity_distance + ns*options.luminosity_distance_sigma)
 
