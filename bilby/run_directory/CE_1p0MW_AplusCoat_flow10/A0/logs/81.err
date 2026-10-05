@@ -1,0 +1,1125 @@
+13:49 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_individual_modes
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+/home/pratyusava.baral/Modified_Dispersion/src/bilby-x-g/bilby/gw/detector/interferometer.py:511: RuntimeWarning: divide by zero encountered in scalar power
+  lambda_A = h * np.abs(A) ** (1/(a-2))
+13:49 bilby INFO    : No prior given, using default BNS priors in /home/pratyusava.baral/Modified_Dispersion/src/bilby-x-g/bilby/gw/prior_files/aligned_spins_bns_tides_on.prior.
+13:49 bilby INFO    : Running for label 'None', output will be saved to '/scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81'
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+13:49 bilby INFO    : Using lal version 7.7.1
+13:49 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.26.15;Id: 2c00d8c200308422036d0a23b7c0394f7c73faad;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+13:49 bilby INFO    : Using lalsimulation version 6.2.1
+13:49 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.26.15;Id: 2c00d8c200308422036d0a23b7c0394f7c73faad;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: /scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/bin/python -m pip install --upgrade pip
+13:49 bilby INFO    : Analysis priors:
+13:49 bilby INFO    : mass_ratio=Uniform(minimum=0.2446698898264139, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+13:49 bilby INFO    : chirp_mass=Uniform(minimum=22.929086319004057, maximum=23.109086319004057, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+13:49 bilby INFO    : luminosity_distance=Uniform(minimum=122.54416880732921, maximum=242.5441688073292, name='luminosity_distance', latex_label='$d_L$', unit=None, boundary=None)
+13:49 bilby INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+13:49 bilby INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+13:49 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+13:49 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+13:49 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
+13:49 bilby INFO    : chi_1=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_1', latex_label='$\\chi_1$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
+13:49 bilby INFO    : chi_2=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_2', latex_label='$\\chi_2$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
+13:49 bilby INFO    : A=SymmetricLogUniform(minimum=1e-05, maximum=0.1, name='A', latex_label='A', unit=None, boundary=None)
+13:49 bilby INFO    : CE_time=Uniform(minimum=1945059351.362994, maximum=1945059351.3649938, name='CE_time', latex_label='$t_{CE}$', unit='$s$', boundary=None)
+13:49 bilby INFO    : a=0
+13:49 bilby INFO    : fiducial=0
+13:49 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.relative.RelativeBinningGravitationalWaveTransientNextGenerationModebyMode'>
+13:49 bilby INFO    : Analysis likelihood noise evidence: -368503.6868830421
+13:49 bilby INFO    : Single likelihood evaluation took 1.099e-02 s
+13:49 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'acceptance-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 16, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.01, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x154ba69e2ed0>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+13:49 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+13:49 bilby INFO    : Using dynesty version 2.1.5
+13:49 bilby INFO    : Using the bilby-implemented acceptance-walk sampling with an average of 60.0 accepted steps per MCMC and maximum length 5000
+13:49 bilby INFO    : Setting up multiproccesing pool with 16 processes
+13:49 bilby INFO    : Reading resume file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+13:49 bilby INFO    : Resume file successfully loaded.
+13:57 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+13:57 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+13:57 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+13:57 bilby WARNING : Axis limits cannot be NaN or Inf
+13:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+14:09 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+14:09 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+14:09 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+14:09 bilby WARNING : Axis limits cannot be NaN or Inf
+14:09 bilby WARNING : Failed to create dynesty run plot at checkpoint
+14:20 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+14:20 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+14:20 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+14:20 bilby WARNING : Axis limits cannot be NaN or Inf
+14:20 bilby WARNING : Failed to create dynesty run plot at checkpoint
+14:31 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+14:31 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+14:31 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+14:31 bilby WARNING : Axis limits cannot be NaN or Inf
+14:31 bilby WARNING : Failed to create dynesty run plot at checkpoint
+14:42 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+14:42 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+14:42 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+14:42 bilby WARNING : Axis limits cannot be NaN or Inf
+14:42 bilby WARNING : Failed to create dynesty run plot at checkpoint
+14:53 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+14:53 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+14:53 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+14:53 bilby WARNING : Axis limits cannot be NaN or Inf
+14:53 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:04 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+15:04 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:04 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:04 bilby WARNING : Axis limits cannot be NaN or Inf
+15:04 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:15 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+15:15 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:15 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:15 bilby WARNING : Axis limits cannot be NaN or Inf
+15:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:27 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+15:27 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:27 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:27 bilby WARNING : Axis limits cannot be NaN or Inf
+15:27 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:38 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+15:38 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:38 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:38 bilby WARNING : Axis limits cannot be NaN or Inf
+15:38 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:50 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+15:50 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:50 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:50 bilby WARNING : Axis limits cannot be NaN or Inf
+15:50 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:01 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+16:01 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:01 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:01 bilby WARNING : Axis limits cannot be NaN or Inf
+16:01 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:13 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+16:13 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:13 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:13 bilby WARNING : Axis limits cannot be NaN or Inf
+16:13 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:24 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+16:24 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:24 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:25 bilby WARNING : Axis limits cannot be NaN or Inf
+16:25 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:36 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+16:36 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:36 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:36 bilby WARNING : Axis limits cannot be NaN or Inf
+16:36 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:48 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+16:48 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:48 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:48 bilby WARNING : Axis limits cannot be NaN or Inf
+16:48 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:00 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+17:00 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+17:00 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:00 bilby WARNING : Axis limits cannot be NaN or Inf
+17:00 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:11 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+17:11 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+17:11 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:11 bilby WARNING : Axis limits cannot be NaN or Inf
+17:11 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:23 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+17:23 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+17:23 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:23 bilby WARNING : Axis limits cannot be NaN or Inf
+17:23 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:35 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+17:35 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+17:35 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:35 bilby WARNING : Axis limits cannot be NaN or Inf
+17:35 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:46 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+17:46 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+17:46 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:46 bilby WARNING : Axis limits cannot be NaN or Inf
+17:46 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:57 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+17:57 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+17:57 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:57 bilby WARNING : Axis limits cannot be NaN or Inf
+17:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:08 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+18:08 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+18:08 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:09 bilby WARNING : Axis limits cannot be NaN or Inf
+18:09 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:20 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+18:20 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+18:20 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:20 bilby WARNING : Axis limits cannot be NaN or Inf
+18:20 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:32 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+18:32 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+18:32 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:32 bilby WARNING : Axis limits cannot be NaN or Inf
+18:32 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:43 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+18:43 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+18:43 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:44 bilby WARNING : Axis limits cannot be NaN or Inf
+18:44 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:55 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+18:55 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+18:55 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:55 bilby WARNING : Axis limits cannot be NaN or Inf
+18:55 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:07 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+19:07 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+19:07 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:07 bilby WARNING : Axis limits cannot be NaN or Inf
+19:07 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:19 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+19:19 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+19:19 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:19 bilby WARNING : Axis limits cannot be NaN or Inf
+19:19 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:31 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+19:31 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+19:31 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:31 bilby WARNING : Axis limits cannot be NaN or Inf
+19:31 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:43 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+19:43 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+19:43 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:43 bilby WARNING : Axis limits cannot be NaN or Inf
+19:43 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:54 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+19:54 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+19:54 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:54 bilby WARNING : Axis limits cannot be NaN or Inf
+19:54 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:05 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+20:05 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+20:05 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:05 bilby WARNING : Axis limits cannot be NaN or Inf
+20:05 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:17 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+20:17 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+20:17 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:17 bilby WARNING : Axis limits cannot be NaN or Inf
+20:17 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:29 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+20:29 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+20:29 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:29 bilby WARNING : Axis limits cannot be NaN or Inf
+20:29 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:41 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+20:41 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+20:41 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:41 bilby WARNING : Axis limits cannot be NaN or Inf
+20:41 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:52 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+20:52 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+20:52 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:52 bilby WARNING : Axis limits cannot be NaN or Inf
+20:52 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:04 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+21:04 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+21:04 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:04 bilby WARNING : Axis limits cannot be NaN or Inf
+21:04 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:16 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+21:16 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+21:16 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:16 bilby WARNING : Axis limits cannot be NaN or Inf
+21:16 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:28 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+21:28 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+21:28 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:29 bilby WARNING : Axis limits cannot be NaN or Inf
+21:29 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:40 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+21:41 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+21:41 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:41 bilby WARNING : Axis limits cannot be NaN or Inf
+21:41 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:53 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+21:53 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+21:53 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:53 bilby WARNING : Axis limits cannot be NaN or Inf
+21:53 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:05 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+22:05 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+22:05 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:05 bilby WARNING : Axis limits cannot be NaN or Inf
+22:05 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:16 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+22:16 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+22:16 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:16 bilby WARNING : Axis limits cannot be NaN or Inf
+22:16 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:28 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+22:28 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+22:28 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:28 bilby WARNING : Axis limits cannot be NaN or Inf
+22:28 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:40 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+22:40 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+22:40 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:40 bilby WARNING : Axis limits cannot be NaN or Inf
+22:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:52 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+22:52 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+22:52 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:52 bilby WARNING : Axis limits cannot be NaN or Inf
+22:52 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:04 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+23:04 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+23:04 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:04 bilby WARNING : Axis limits cannot be NaN or Inf
+23:04 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:16 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+23:16 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+23:16 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:16 bilby WARNING : Axis limits cannot be NaN or Inf
+23:16 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:28 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+23:28 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+23:28 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:28 bilby WARNING : Axis limits cannot be NaN or Inf
+23:28 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:40 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+23:40 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+23:40 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:40 bilby WARNING : Axis limits cannot be NaN or Inf
+23:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:52 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+23:52 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+23:52 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:53 bilby WARNING : Axis limits cannot be NaN or Inf
+23:53 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:05 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+00:05 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:05 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:05 bilby WARNING : Axis limits cannot be NaN or Inf
+00:05 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:17 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+00:17 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:17 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:17 bilby WARNING : Axis limits cannot be NaN or Inf
+00:17 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:28 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+00:28 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:28 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:28 bilby WARNING : Axis limits cannot be NaN or Inf
+00:28 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:40 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+00:40 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:40 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:40 bilby WARNING : Axis limits cannot be NaN or Inf
+00:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:51 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+00:51 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:51 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:51 bilby WARNING : Axis limits cannot be NaN or Inf
+00:51 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:03 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+01:03 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+01:03 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:03 bilby WARNING : Axis limits cannot be NaN or Inf
+01:03 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:15 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+01:15 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+01:15 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:15 bilby WARNING : Axis limits cannot be NaN or Inf
+01:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:27 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+01:27 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+01:27 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:27 bilby WARNING : Axis limits cannot be NaN or Inf
+01:27 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:39 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+01:39 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+01:39 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:39 bilby WARNING : Axis limits cannot be NaN or Inf
+01:39 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:51 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+01:51 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+01:51 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:51 bilby WARNING : Axis limits cannot be NaN or Inf
+01:51 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:03 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+02:03 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+02:03 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:03 bilby WARNING : Axis limits cannot be NaN or Inf
+02:03 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:15 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+02:15 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+02:15 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:15 bilby WARNING : Axis limits cannot be NaN or Inf
+02:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:27 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+02:27 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+02:27 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:27 bilby WARNING : Axis limits cannot be NaN or Inf
+02:27 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:38 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+02:38 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+02:38 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:38 bilby WARNING : Axis limits cannot be NaN or Inf
+02:38 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:50 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+02:50 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+02:50 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:50 bilby WARNING : Axis limits cannot be NaN or Inf
+02:50 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:00 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+03:00 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+03:00 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:00 bilby WARNING : Axis limits cannot be NaN or Inf
+03:00 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:11 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+03:11 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+03:11 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:11 bilby WARNING : Axis limits cannot be NaN or Inf
+03:11 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:22 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+03:22 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+03:22 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:22 bilby WARNING : Axis limits cannot be NaN or Inf
+03:22 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:32 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+03:32 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+03:32 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:32 bilby WARNING : Axis limits cannot be NaN or Inf
+03:32 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:45 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+03:45 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+03:45 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:45 bilby WARNING : Axis limits cannot be NaN or Inf
+03:45 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:56 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+03:56 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+03:56 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:56 bilby WARNING : Axis limits cannot be NaN or Inf
+03:56 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:07 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+04:07 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+04:07 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:07 bilby WARNING : Axis limits cannot be NaN or Inf
+04:07 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:20 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+04:20 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+04:20 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:20 bilby WARNING : Axis limits cannot be NaN or Inf
+04:20 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:33 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+04:33 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+04:33 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:33 bilby WARNING : Axis limits cannot be NaN or Inf
+04:33 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:43 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+04:43 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+04:43 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:44 bilby WARNING : Axis limits cannot be NaN or Inf
+04:44 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:55 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+04:55 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+04:55 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:55 bilby WARNING : Axis limits cannot be NaN or Inf
+04:55 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:07 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+05:07 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+05:07 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:07 bilby WARNING : Axis limits cannot be NaN or Inf
+05:07 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:20 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+05:20 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+05:20 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:20 bilby WARNING : Axis limits cannot be NaN or Inf
+05:20 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:33 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+05:33 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+05:33 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:33 bilby WARNING : Axis limits cannot be NaN or Inf
+05:33 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:44 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+05:44 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+05:44 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:44 bilby WARNING : Axis limits cannot be NaN or Inf
+05:44 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:54 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+05:54 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+05:54 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:54 bilby WARNING : Axis limits cannot be NaN or Inf
+05:54 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:07 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+06:07 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+06:07 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:08 bilby WARNING : Axis limits cannot be NaN or Inf
+06:08 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:23 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+06:23 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+06:23 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:23 bilby WARNING : Axis limits cannot be NaN or Inf
+06:23 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:37 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+06:37 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+06:37 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:37 bilby WARNING : Axis limits cannot be NaN or Inf
+06:37 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:47 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+06:47 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+06:47 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:47 bilby WARNING : Axis limits cannot be NaN or Inf
+06:47 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:57 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+06:57 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+06:57 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:57 bilby WARNING : Axis limits cannot be NaN or Inf
+06:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:11 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+07:12 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+07:12 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:12 bilby WARNING : Axis limits cannot be NaN or Inf
+07:12 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:26 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+07:26 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+07:26 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:26 bilby WARNING : Axis limits cannot be NaN or Inf
+07:26 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:40 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+07:40 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+07:40 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:40 bilby WARNING : Axis limits cannot be NaN or Inf
+07:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:54 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+07:54 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+07:54 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:54 bilby WARNING : Axis limits cannot be NaN or Inf
+07:54 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:07 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+08:07 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:07 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:07 bilby WARNING : Axis limits cannot be NaN or Inf
+08:07 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:22 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+08:22 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:22 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:22 bilby WARNING : Axis limits cannot be NaN or Inf
+08:22 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:34 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+08:34 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:34 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:34 bilby WARNING : Axis limits cannot be NaN or Inf
+08:34 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:48 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+08:48 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:48 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:48 bilby WARNING : Axis limits cannot be NaN or Inf
+08:48 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:02 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+09:02 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:02 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:02 bilby WARNING : Axis limits cannot be NaN or Inf
+09:02 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:15 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+09:15 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:15 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:16 bilby WARNING : Axis limits cannot be NaN or Inf
+09:16 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:27 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+09:27 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:27 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:27 bilby WARNING : Axis limits cannot be NaN or Inf
+09:27 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:41 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+09:41 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:41 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:41 bilby WARNING : Axis limits cannot be NaN or Inf
+09:41 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:54 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+09:54 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:54 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:55 bilby WARNING : Axis limits cannot be NaN or Inf
+09:55 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:06 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+10:06 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+10:06 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:07 bilby WARNING : Axis limits cannot be NaN or Inf
+10:07 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:18 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+10:18 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+10:18 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:19 bilby WARNING : Axis limits cannot be NaN or Inf
+10:19 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:30 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+10:30 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+10:30 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:30 bilby WARNING : Axis limits cannot be NaN or Inf
+10:30 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:42 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+10:42 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+10:42 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:43 bilby WARNING : Axis limits cannot be NaN or Inf
+10:43 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:04 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+11:04 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+11:04 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:04 bilby WARNING : Axis limits cannot be NaN or Inf
+11:04 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:17 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+11:17 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+11:17 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:17 bilby WARNING : Axis limits cannot be NaN or Inf
+11:17 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:28 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+11:28 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+11:28 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:28 bilby WARNING : Axis limits cannot be NaN or Inf
+11:28 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:39 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+11:39 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+11:39 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:39 bilby WARNING : Axis limits cannot be NaN or Inf
+11:39 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:52 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+11:52 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+11:52 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:52 bilby WARNING : Axis limits cannot be NaN or Inf
+11:52 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:06 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+12:06 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+12:06 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:06 bilby WARNING : Axis limits cannot be NaN or Inf
+12:06 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:21 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+12:21 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+12:21 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:21 bilby WARNING : Axis limits cannot be NaN or Inf
+12:21 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:31 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+12:31 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+12:31 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:32 bilby WARNING : Axis limits cannot be NaN or Inf
+12:32 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:45 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+12:46 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+12:46 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:46 bilby WARNING : Axis limits cannot be NaN or Inf
+12:46 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:59 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+12:59 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+12:59 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:59 bilby WARNING : Axis limits cannot be NaN or Inf
+12:59 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:09 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+13:09 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+13:09 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+13:09 bilby WARNING : Axis limits cannot be NaN or Inf
+13:09 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:22 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+13:22 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+13:22 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+13:22 bilby WARNING : Axis limits cannot be NaN or Inf
+13:22 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:33 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+13:34 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+13:34 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+13:34 bilby WARNING : Axis limits cannot be NaN or Inf
+13:34 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:44 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/81/None_resume.pickle
+13:44 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+13:44 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+13:45 bilby WARNING : Axis limits cannot be NaN or Inf
+13:45 bilby WARNING : Failed to create dynesty run plot at checkpoint

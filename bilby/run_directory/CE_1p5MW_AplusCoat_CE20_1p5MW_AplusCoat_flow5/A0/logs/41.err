@@ -1,0 +1,1539 @@
+14:54 bilby INFO    : Waveform generator initiated with
+  frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_individual_modes
+  time_domain_source_model: None
+  parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
+/home/pratyusava.baral/Modified_Dispersion/src/bilby-x-g/bilby/gw/detector/interferometer.py:511: RuntimeWarning: divide by zero encountered in scalar power
+  lambda_A = h * np.abs(A) ** (1/(a-2))
+14:54 bilby INFO    : No prior given, using default BNS priors in /home/pratyusava.baral/Modified_Dispersion/src/bilby-x-g/bilby/gw/prior_files/aligned_spins_bns_tides_on.prior.
+14:54 bilby INFO    : Running for label 'None', output will be saved to 'results/41'
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+14:54 bilby INFO    : Using lal version 7.7.1
+14:54 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.26.15;Id: 2c00d8c200308422036d0a23b7c0394f7c73faad;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+14:54 bilby INFO    : Using lalsimulation version 6.2.1
+14:54 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.26.15;Id: 2c00d8c200308422036d0a23b7c0394f7c73faad;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: /scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/bin/python -m pip install --upgrade pip
+14:54 bilby INFO    : Analysis priors:
+14:54 bilby INFO    : mass_ratio=Uniform(minimum=0.45209757460696665, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+14:54 bilby INFO    : chirp_mass=Uniform(minimum=17.327500929573528, maximum=17.38750092957353, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+14:54 bilby INFO    : luminosity_distance=Uniform(minimum=200.2411340409457, maximum=290.24113404094567, name='luminosity_distance', latex_label='$d_L$', unit=None, boundary=None)
+14:54 bilby INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+14:54 bilby INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+14:54 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+14:54 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+14:54 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
+14:54 bilby INFO    : chi_1=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_1', latex_label='$\\chi_1$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
+14:54 bilby INFO    : chi_2=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_2', latex_label='$\\chi_2$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
+14:54 bilby INFO    : A=SymmetricLogUniform(minimum=1e-05, maximum=0.1, name='A', latex_label='A', unit=None, boundary=None)
+14:54 bilby INFO    : CE_time=Uniform(minimum=1925412984.2332714, maximum=1925412984.2352712, name='CE_time', latex_label='$t_{CE}$', unit='$s$', boundary=None)
+14:54 bilby INFO    : a=0
+14:54 bilby INFO    : fiducial=0
+14:54 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.relative.RelativeBinningGravitationalWaveTransientNextGenerationModebyMode'>
+14:54 bilby INFO    : Analysis likelihood noise evidence: -305360.3620800987
+14:54 bilby INFO    : Single likelihood evaluation took 3.547e-02 s
+14:54 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'acceptance-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 4, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.01, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14aecc1f8e10>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
+14:54 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+14:54 bilby INFO    : Using dynesty version 2.1.5
+14:54 bilby INFO    : Using the bilby-implemented acceptance-walk sampling with an average of 16.0 accepted steps per MCMC and maximum length 5000
+14:54 bilby INFO    : Setting up multiproccesing pool with 4 processes
+14:54 bilby INFO    : Reading resume file results/41/None_resume.pickle
+14:54 bilby INFO    : Resume file successfully loaded.
+14:55 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+14:55 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+14:55 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+14:55 bilby WARNING : Axis limits cannot be NaN or Inf
+14:55 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:06 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:06 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:06 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:06 bilby WARNING : Axis limits cannot be NaN or Inf
+15:06 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:16 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:16 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:16 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:16 bilby WARNING : Axis limits cannot be NaN or Inf
+15:16 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:27 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:27 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:27 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:27 bilby WARNING : Axis limits cannot be NaN or Inf
+15:27 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:38 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+15:38 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+15:38 bilby WARNING : Failed to create dynesty state plot at checkpoint
+15:38 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+15:38 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+15:38 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+15:38 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:48 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+15:48 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+15:48 bilby WARNING : Failed to create dynesty state plot at checkpoint
+15:48 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+15:48 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+15:48 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+15:48 bilby WARNING : Failed to create dynesty run plot at checkpoint
+15:58 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+15:58 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+15:58 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+15:58 bilby WARNING : Axis limits cannot be NaN or Inf
+15:58 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:09 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+16:09 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:09 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:09 bilby WARNING : Axis limits cannot be NaN or Inf
+16:09 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:19 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+16:19 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:19 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:20 bilby WARNING : Axis limits cannot be NaN or Inf
+16:20 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:30 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+16:30 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+16:30 bilby WARNING : Failed to create dynesty state plot at checkpoint
+16:30 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+16:30 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+16:30 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+16:30 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:40 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+16:40 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:40 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:40 bilby WARNING : Axis limits cannot be NaN or Inf
+16:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+16:50 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+16:50 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+16:50 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+16:50 bilby WARNING : Axis limits cannot be NaN or Inf
+16:50 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:00 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+17:00 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+17:00 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:00 bilby WARNING : Axis limits cannot be NaN or Inf
+17:00 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:11 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+17:11 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:11 bilby WARNING : Failed to create dynesty state plot at checkpoint
+17:11 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:11 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+17:11 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:11 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:21 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+17:21 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+17:21 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:21 bilby WARNING : Axis limits cannot be NaN or Inf
+17:21 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:32 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:32 bilby WARNING : Axis limits cannot be NaN or Inf
+17:32 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:43 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+17:43 bilby WARNING : Axis limits cannot be NaN or Inf
+17:43 bilby WARNING : Failed to create dynesty run plot at checkpoint
+17:53 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+17:53 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:53 bilby WARNING : Failed to create dynesty state plot at checkpoint
+17:53 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:53 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+17:53 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+17:53 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:04 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:04 bilby WARNING : Axis limits cannot be NaN or Inf
+18:04 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:15 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:15 bilby WARNING : Axis limits cannot be NaN or Inf
+18:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:26 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+18:26 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+18:26 bilby WARNING : Failed to create dynesty state plot at checkpoint
+18:26 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+18:26 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+18:26 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+18:26 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:37 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+18:37 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+18:37 bilby WARNING : Failed to create dynesty state plot at checkpoint
+18:37 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+18:37 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+18:37 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+18:37 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:47 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:47 bilby WARNING : Axis limits cannot be NaN or Inf
+18:47 bilby WARNING : Failed to create dynesty run plot at checkpoint
+18:58 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+18:58 bilby WARNING : Axis limits cannot be NaN or Inf
+18:58 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:08 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:09 bilby WARNING : Axis limits cannot be NaN or Inf
+19:09 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:19 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+19:19 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+19:19 bilby WARNING : Failed to create dynesty state plot at checkpoint
+19:19 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+19:19 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+19:19 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+19:19 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:30 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+19:30 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+19:30 bilby WARNING : Failed to create dynesty state plot at checkpoint
+19:30 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+19:30 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+19:30 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+19:30 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:40 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:40 bilby WARNING : Axis limits cannot be NaN or Inf
+19:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+19:51 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+19:51 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+19:51 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+19:51 bilby WARNING : Axis limits cannot be NaN or Inf
+19:51 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:02 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+20:02 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:02 bilby WARNING : Failed to create dynesty state plot at checkpoint
+20:02 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:02 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+20:02 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:02 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:12 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+20:12 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:12 bilby WARNING : Failed to create dynesty state plot at checkpoint
+20:12 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:12 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+20:12 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:12 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:22 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:22 bilby WARNING : Axis limits cannot be NaN or Inf
+20:22 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:33 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+20:33 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+20:33 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+20:33 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:33 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:43 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+20:43 bilby WARNING : Axis limits cannot be NaN or Inf
+20:43 bilby WARNING : Failed to create dynesty run plot at checkpoint
+20:54 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+20:54 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:54 bilby WARNING : Failed to create dynesty state plot at checkpoint
+20:54 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:54 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+20:54 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+20:54 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:05 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+21:05 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+21:05 bilby WARNING : Failed to create dynesty state plot at checkpoint
+21:05 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+21:05 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+21:05 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+21:05 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:15 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+21:15 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+21:15 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:15 bilby WARNING : Axis limits cannot be NaN or Inf
+21:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:25 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+21:25 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+21:25 bilby WARNING : Failed to create dynesty state plot at checkpoint
+21:25 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+21:25 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+21:25 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+21:25 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:36 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+21:36 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+21:36 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:36 bilby WARNING : Axis limits cannot be NaN or Inf
+21:36 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:46 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+21:46 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+21:46 bilby WARNING : Failed to create dynesty state plot at checkpoint
+21:46 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+21:46 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+21:46 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+21:46 bilby WARNING : Failed to create dynesty run plot at checkpoint
+21:57 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+21:57 bilby WARNING : Axis limits cannot be NaN or Inf
+21:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:07 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:07 bilby WARNING : Axis limits cannot be NaN or Inf
+22:07 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:18 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+22:18 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+22:18 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:18 bilby WARNING : Axis limits cannot be NaN or Inf
+22:18 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:28 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:29 bilby WARNING : Axis limits cannot be NaN or Inf
+22:29 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:39 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:39 bilby WARNING : Axis limits cannot be NaN or Inf
+22:39 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:49 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+22:49 bilby WARNING : Axis limits cannot be NaN or Inf
+22:49 bilby WARNING : Failed to create dynesty run plot at checkpoint
+22:59 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:00 bilby WARNING : Axis limits cannot be NaN or Inf
+23:00 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:10 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:10 bilby WARNING : Axis limits cannot be NaN or Inf
+23:10 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:20 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:20 bilby WARNING : Axis limits cannot be NaN or Inf
+23:20 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:31 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:31 bilby WARNING : Axis limits cannot be NaN or Inf
+23:31 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:41 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:41 bilby WARNING : Axis limits cannot be NaN or Inf
+23:41 bilby WARNING : Failed to create dynesty run plot at checkpoint
+23:52 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+23:52 bilby WARNING : Axis limits cannot be NaN or Inf
+23:52 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:02 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+00:02 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:02 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:02 bilby WARNING : Axis limits cannot be NaN or Inf
+00:02 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:13 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+00:13 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:13 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:13 bilby WARNING : Axis limits cannot be NaN or Inf
+00:13 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:23 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+00:23 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:23 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:23 bilby WARNING : Axis limits cannot be NaN or Inf
+00:23 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:34 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+00:34 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+00:34 bilby WARNING : Failed to create dynesty state plot at checkpoint
+00:34 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+00:34 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+00:34 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+00:34 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:44 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+00:44 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+00:44 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:44 bilby WARNING : Axis limits cannot be NaN or Inf
+00:44 bilby WARNING : Failed to create dynesty run plot at checkpoint
+00:55 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+00:55 bilby WARNING : Axis limits cannot be NaN or Inf
+00:55 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:05 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:05 bilby WARNING : Axis limits cannot be NaN or Inf
+01:05 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:15 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+01:15 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+01:15 bilby WARNING : Failed to create dynesty state plot at checkpoint
+01:15 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+01:15 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+01:15 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+01:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:26 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+01:26 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+01:26 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:26 bilby WARNING : Axis limits cannot be NaN or Inf
+01:26 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:37 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:37 bilby WARNING : Axis limits cannot be NaN or Inf
+01:37 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:48 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:48 bilby WARNING : Axis limits cannot be NaN or Inf
+01:48 bilby WARNING : Failed to create dynesty run plot at checkpoint
+01:58 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+01:58 bilby WARNING : Axis limits cannot be NaN or Inf
+01:58 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:08 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:09 bilby WARNING : Axis limits cannot be NaN or Inf
+02:09 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:19 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:19 bilby WARNING : Axis limits cannot be NaN or Inf
+02:19 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:29 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+02:29 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+02:29 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:30 bilby WARNING : Axis limits cannot be NaN or Inf
+02:30 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:40 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:40 bilby WARNING : Axis limits cannot be NaN or Inf
+02:40 bilby WARNING : Failed to create dynesty run plot at checkpoint
+02:50 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+02:50 bilby WARNING : Axis limits cannot be NaN or Inf
+02:50 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:00 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+03:01 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+03:01 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:01 bilby WARNING : Axis limits cannot be NaN or Inf
+03:01 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:11 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:11 bilby WARNING : Axis limits cannot be NaN or Inf
+03:11 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:21 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:21 bilby WARNING : Axis limits cannot be NaN or Inf
+03:21 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:32 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:32 bilby WARNING : Axis limits cannot be NaN or Inf
+03:32 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:42 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:42 bilby WARNING : Axis limits cannot be NaN or Inf
+03:42 bilby WARNING : Failed to create dynesty run plot at checkpoint
+03:52 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+03:52 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+03:52 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+03:52 bilby WARNING : Axis limits cannot be NaN or Inf
+03:52 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:02 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+04:02 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+04:02 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:03 bilby WARNING : Axis limits cannot be NaN or Inf
+04:03 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:13 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+04:13 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+04:13 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:13 bilby WARNING : Axis limits cannot be NaN or Inf
+04:13 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:23 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+04:23 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+04:23 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:23 bilby WARNING : Axis limits cannot be NaN or Inf
+04:23 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:33 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:34 bilby WARNING : Axis limits cannot be NaN or Inf
+04:34 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:44 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+04:44 bilby WARNING : Axis limits cannot be NaN or Inf
+04:44 bilby WARNING : Failed to create dynesty run plot at checkpoint
+04:54 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+04:54 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+04:54 bilby WARNING : Failed to create dynesty state plot at checkpoint
+04:54 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+04:54 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+04:54 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+04:54 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:05 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:05 bilby WARNING : Axis limits cannot be NaN or Inf
+05:05 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:15 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+05:15 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+05:15 bilby WARNING : Failed to create dynesty state plot at checkpoint
+05:15 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+05:15 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+05:15 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+05:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:26 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:26 bilby WARNING : Axis limits cannot be NaN or Inf
+05:26 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:36 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:37 bilby WARNING : Axis limits cannot be NaN or Inf
+05:37 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:47 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+05:47 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+05:47 bilby WARNING : Failed to create dynesty state plot at checkpoint
+05:47 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+05:47 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+05:47 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+05:47 bilby WARNING : Failed to create dynesty run plot at checkpoint
+05:58 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+05:58 bilby WARNING : Axis limits cannot be NaN or Inf
+05:58 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:08 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:08 bilby WARNING : Axis limits cannot be NaN or Inf
+06:08 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:18 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+06:18 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+06:18 bilby WARNING : Failed to create dynesty state plot at checkpoint
+06:18 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+06:18 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+06:18 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+06:18 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:28 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:29 bilby WARNING : Axis limits cannot be NaN or Inf
+06:29 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:39 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:39 bilby WARNING : Axis limits cannot be NaN or Inf
+06:39 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:49 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+06:49 bilby WARNING : Axis limits cannot be NaN or Inf
+06:49 bilby WARNING : Failed to create dynesty run plot at checkpoint
+06:59 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:00 bilby WARNING : Axis limits cannot be NaN or Inf
+07:00 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:10 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:10 bilby WARNING : Axis limits cannot be NaN or Inf
+07:10 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:20 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:21 bilby WARNING : Axis limits cannot be NaN or Inf
+07:21 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:31 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:31 bilby WARNING : Axis limits cannot be NaN or Inf
+07:31 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:41 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:41 bilby WARNING : Axis limits cannot be NaN or Inf
+07:41 bilby WARNING : Failed to create dynesty run plot at checkpoint
+07:52 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+07:52 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+07:52 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+07:52 bilby WARNING : Axis limits cannot be NaN or Inf
+07:52 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:02 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:03 bilby WARNING : Axis limits cannot be NaN or Inf
+08:03 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:13 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:13 bilby WARNING : Axis limits cannot be NaN or Inf
+08:13 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:23 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+08:23 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:23 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:23 bilby WARNING : Axis limits cannot be NaN or Inf
+08:23 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:34 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+08:34 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+08:34 bilby WARNING : Failed to create dynesty state plot at checkpoint
+08:34 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+08:34 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+08:34 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+08:34 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:44 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+08:44 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:44 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:44 bilby WARNING : Axis limits cannot be NaN or Inf
+08:44 bilby WARNING : Failed to create dynesty run plot at checkpoint
+08:54 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+08:54 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+08:54 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+08:54 bilby WARNING : Axis limits cannot be NaN or Inf
+08:54 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:05 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+09:05 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+09:05 bilby WARNING : Failed to create dynesty state plot at checkpoint
+09:05 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+09:05 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+09:05 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+09:05 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:15 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:15 bilby WARNING : Axis limits cannot be NaN or Inf
+09:15 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:25 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:25 bilby WARNING : Axis limits cannot be NaN or Inf
+09:25 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:36 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+09:36 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:36 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:36 bilby WARNING : Axis limits cannot be NaN or Inf
+09:36 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:46 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:46 bilby WARNING : Axis limits cannot be NaN or Inf
+09:46 bilby WARNING : Failed to create dynesty run plot at checkpoint
+09:56 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+09:56 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+09:56 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+09:57 bilby WARNING : Axis limits cannot be NaN or Inf
+09:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:07 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+10:07 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+10:07 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:07 bilby WARNING : Axis limits cannot be NaN or Inf
+10:07 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:17 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+10:17 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+10:17 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:17 bilby WARNING : Axis limits cannot be NaN or Inf
+10:17 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:28 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+10:28 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+10:28 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:28 bilby WARNING : Axis limits cannot be NaN or Inf
+10:28 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:38 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+10:38 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+10:38 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:38 bilby WARNING : Axis limits cannot be NaN or Inf
+10:38 bilby WARNING : Failed to create dynesty run plot at checkpoint
+10:49 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+10:49 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+10:49 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+10:49 bilby WARNING : Axis limits cannot be NaN or Inf
+10:49 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:06 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+11:06 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+11:06 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:06 bilby WARNING : Axis limits cannot be NaN or Inf
+11:06 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:16 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+11:16 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+11:16 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:16 bilby WARNING : Axis limits cannot be NaN or Inf
+11:16 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:26 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+11:26 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+11:26 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:26 bilby WARNING : Axis limits cannot be NaN or Inf
+11:26 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:37 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+11:37 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+11:37 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:37 bilby WARNING : Axis limits cannot be NaN or Inf
+11:37 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:47 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+11:47 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+11:47 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:47 bilby WARNING : Axis limits cannot be NaN or Inf
+11:47 bilby WARNING : Failed to create dynesty run plot at checkpoint
+11:57 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+11:57 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+11:57 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+11:57 bilby WARNING : Axis limits cannot be NaN or Inf
+11:57 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:08 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:08 bilby WARNING : Axis limits cannot be NaN or Inf
+12:08 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:18 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:18 bilby WARNING : Axis limits cannot be NaN or Inf
+12:18 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:28 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:29 bilby WARNING : Axis limits cannot be NaN or Inf
+12:29 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:39 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+12:39 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+12:39 bilby WARNING : Failed to create dynesty state plot at checkpoint
+12:39 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+12:39 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+12:39 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+12:39 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:49 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+12:49 bilby WARNING : Axis limits cannot be NaN or Inf
+12:49 bilby WARNING : Failed to create dynesty run plot at checkpoint
+12:59 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+12:59 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+12:59 bilby WARNING : Failed to create dynesty state plot at checkpoint
+12:59 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+12:59 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+12:59 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+12:59 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:10 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
+  ax.set_xlim(span[i])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:786: UserWarning: Attempting to set identical low and high ylims makes transformation singular; automatically expanding.
+  ax.set_ylim([0., max(y0) * 1.05])
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+13:10 bilby WARNING : Axis limits cannot be NaN or Inf
+13:10 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:20 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+13:20 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+13:20 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+13:20 bilby WARNING : Axis limits cannot be NaN or Inf
+13:20 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:30 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+13:30 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
+13:30 bilby WARNING : Failed to create dynesty state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
+  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
+13:30 bilby WARNING : Axis limits cannot be NaN or Inf
+13:30 bilby WARNING : Failed to create dynesty run plot at checkpoint
+13:41 bilby INFO    : Written checkpoint file results/41/None_resume.pickle
+13:41 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+13:41 bilby WARNING : Failed to create dynesty state plot at checkpoint
+13:41 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+13:41 bilby WARNING : Failed to create dynesty unit state plot at checkpoint
+/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
+  np.exp(logwt), logz if logplot else np.exp(logz)
+13:41 bilby WARNING : The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principle component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+13:41 bilby WARNING : Failed to create dynesty run plot at checkpoint

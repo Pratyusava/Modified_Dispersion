@@ -70,7 +70,7 @@ parser.add_option("--asd_CE40high", action="store_true", default=False, help="us
 parser.add_option("--asd_CE40low", action="store_true", default=False, help="use the 1.0 MW CE40 ASD")
 parser.add_option("--asd_CE20high", action="store_true", default=False, help="use the 1.5 MW CE20 ASD (default)")
 parser.add_option("--asd_CE20low", action="store_true", default=False, help="use the 1.0 MW CE20 ASD")
-parser.add_option("--asd_A1", type="string", default='/ligo/home/ligo.org/pratyusava.baral/dispersion/asd/Aplus_asd.txt')
+parser.add_option("--asd_A1", type="string", default='/home/pratyusava.baral/Modified_Dispersion/asd/Aplus_asd.txt')
 
 
 
@@ -90,7 +90,7 @@ if options.asd_CE20high and options.asd_CE20low:
     parser.error("--asd_CE20high and --asd_CE20low are mutually exclusive")
 if not 0 < options.A_min < options.A_max:
     parser.error("need 0 < --A_min < --A_max")
-ASD_DIR = '/ligo/home/ligo.org/pratyusava.baral/dispersion/asd'
+ASD_DIR = '/home/pratyusava.baral/Modified_Dispersion/asd'
 asd_CE40 = f"{ASD_DIR}/CE40km_{'1p0' if options.asd_CE40low else '1p5'}MW_aLIGO_coat_strain.txt"
 asd_CE20 = f"{ASD_DIR}/CE20km_{'1p0' if options.asd_CE20low else '1p5'}MW_aLIGO_coat_strain.txt"
 print(f"CE40 ASD: {asd_CE40}")
@@ -152,7 +152,7 @@ waveform_generator = bilby.gw.WaveformGenerator(
 frequencies_asd, strain_asd = np.loadtxt(asd_CE40, unpack=True)
         
 ifos = []
-ifo = bilby.gw.detector.load_interferometer('/ligo/home/ligo.org/pratyusava.baral/dispersion/detector_configurations/bilby/CE40.ifo')
+ifo = bilby.gw.detector.load_interferometer('/home/pratyusava.baral/Modified_Dispersion/detector_configurations/bilby/CE40.ifo')
 ifo.power_spectral_density = bilby.gw.detector.PowerSpectralDensity(
             frequency_array=frequencies_asd,
             asd_array=strain_asd
@@ -161,7 +161,7 @@ ifos.append(ifo)
 
 if options.A1:
     frequencies_asd, strain_asd = np.loadtxt(options.asd_A1, unpack=True)
-    ifo = bilby.gw.detector.load_interferometer('/ligo/home/ligo.org/pratyusava.baral/dispersion/detector_configurations/bilby/A1.ifo')
+    ifo = bilby.gw.detector.load_interferometer('/home/pratyusava.baral/Modified_Dispersion/detector_configurations/bilby/A1.ifo')
     ifo.power_spectral_density = bilby.gw.detector.PowerSpectralDensity(
             frequency_array=frequencies_asd,
             asd_array=strain_asd
@@ -171,7 +171,7 @@ if options.A1:
 if options.CE20:
     print(f"CE20 ASD: {asd_CE20}")
     frequencies_asd, strain_asd = np.loadtxt(asd_CE20, unpack=True)
-    ifo = bilby.gw.detector.load_interferometer('/ligo/home/ligo.org/pratyusava.baral/dispersion/detector_configurations/bilby/CE20.ifo')
+    ifo = bilby.gw.detector.load_interferometer('/home/pratyusava.baral/Modified_Dispersion/detector_configurations//bilby/CE20.ifo')
     ifo.power_spectral_density = bilby.gw.detector.PowerSpectralDensity(
             frequency_array=frequencies_asd,
             asd_array=strain_asd
