@@ -2020,3 +2020,21 @@
 	GPUs = 0
 	Memory = 15104
 ...
+004 (79374322.085.000) 2026-10-24 17:56:16 Job was evicted. Code 1023 Subcode 0
+	(0) CPU times
+		Usr 1 23:00:09, Sys 0 00:02:35  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: via condor_rm (by user pratyusava.baral)
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     3.39        4         4 
+	   Disk (KB)            : 25000       25000     28672 
+	   GPUs                 :                           0 
+	   Memory (MB)          :  1465       15000     15104 
+	   TimeExecute (s)      : 55289                       
+	   TimeSlotBusy (s)     : 55289                       
+...
+009 (79374322.085.000) 2026-10-24 17:56:16 Job was aborted.
+	via condor_rm (by user pratyusava.baral)
+...
