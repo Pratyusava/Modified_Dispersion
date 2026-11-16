@@ -1,112 +1,55 @@
-17:22 bilby INFO    : Waveform generator initiated with
+10:55 bilby INFO    : Waveform generator initiated with
   frequency_domain_source_model: bilby.gw.source.lal_binary_black_hole_individual_modes
   time_domain_source_model: None
   parameter_conversion: bilby.gw.conversion.convert_to_lal_binary_black_hole_parameters
 /home/pratyusava.baral/Modified_Dispersion/src/bilby-x-g/bilby/gw/detector/interferometer.py:511: RuntimeWarning: divide by zero encountered in scalar power
   lambda_A = h * np.abs(A) ** (1/(a-2))
-17:22 bilby INFO    : No prior given, using default BNS priors in /home/pratyusava.baral/Modified_Dispersion/src/bilby-x-g/bilby/gw/prior_files/aligned_spins_bns_tides_on.prior.
-17:22 bilby INFO    : Running for label 'None', output will be saved to '/scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/47'
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
-17:22 bilby INFO    : Using lal version 7.7.1
-17:22 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.26.15;Id: 2c00d8c200308422036d0a23b7c0394f7c73faad;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
-17:22 bilby INFO    : Using lalsimulation version 6.2.1
-17:22 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.26.15;Id: 2c00d8c200308422036d0a23b7c0394f7c73faad;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+10:55 bilby INFO    : No prior given, using default BNS priors in /home/pratyusava.baral/Modified_Dispersion/src/bilby-x-g/bilby/gw/prior_files/aligned_spins_bns_tides_on.prior.
+10:55 bilby INFO    : Running for label 'None', output will be saved to '/scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/47'
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Performing redundancy check using BBHPriorDict(self).test_redundancy
+10:55 bilby INFO    : Using lal version 7.7.1
+10:55 bilby INFO    : Using lal git version Branch: None;Tag: lalsuite-v7.26.15;Id: 2c00d8c200308422036d0a23b7c0394f7c73faad;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
+10:55 bilby INFO    : Using lalsimulation version 6.2.1
+10:55 bilby INFO    : Using lalsimulation git version Branch: None;Tag: lalsuite-v7.26.15;Id: 2c00d8c200308422036d0a23b7c0394f7c73faad;;Builder: Unknown User <>;Repository status: CLEAN: All modifications committed
 
 [notice] A new release of pip is available: 24.0 -> 26.3
 [notice] To update, run: /scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/bin/python -m pip install --upgrade pip
-17:22 bilby INFO    : Analysis priors:
-17:22 bilby INFO    : mass_ratio=Uniform(minimum=0.3970308220326837, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
-17:22 bilby INFO    : chirp_mass=Uniform(minimum=12.593509051797586, maximum=12.773509051797586, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
-17:22 bilby INFO    : luminosity_distance=Uniform(minimum=101.63773825466743, maximum=221.63773825466743, name='luminosity_distance', latex_label='$d_L$', unit=None, boundary=None)
-17:22 bilby INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
-17:22 bilby INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
-17:22 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
-17:22 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
-17:22 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
-17:22 bilby INFO    : chi_1=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_1', latex_label='$\\chi_1$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
-17:22 bilby INFO    : chi_2=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_2', latex_label='$\\chi_2$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
-17:22 bilby INFO    : A=SymmetricLogUniform(minimum=1e-05, maximum=0.1, name='A', latex_label='A', unit=None, boundary=None)
-17:22 bilby INFO    : CE_time=Uniform(minimum=1934665752.3299422, maximum=1934665752.331942, name='CE_time', latex_label='$t_{CE}$', unit='$s$', boundary=None)
-17:22 bilby INFO    : a=0
-17:22 bilby INFO    : fiducial=0
-17:22 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.relative.RelativeBinningGravitationalWaveTransientNextGenerationModebyMode'>
-17:22 bilby INFO    : Analysis likelihood noise evidence: -502353.998060653
-17:22 bilby INFO    : Single likelihood evaluation took 1.417e-02 s
-17:22 bilby INFO    : Using sampler Dynesty with kwargs {'nlive': 500, 'bound': 'live', 'sample': 'acceptance-walk', 'periodic': None, 'reflective': None, 'update_interval': 600, 'first_update': None, 'npdim': None, 'rstate': None, 'queue_size': 16, 'pool': None, 'use_pool': None, 'live_points': None, 'logl_args': None, 'logl_kwargs': None, 'ptform_args': None, 'ptform_kwargs': None, 'gradient': None, 'grad_args': None, 'grad_kwargs': None, 'compute_jac': False, 'enlarge': None, 'bootstrap': None, 'walks': 100, 'facc': 0.2, 'slices': None, 'fmove': 0.9, 'max_move': 100, 'update_func': None, 'ncdim': None, 'blob': False, 'save_history': False, 'history_filename': None, 'maxiter': None, 'maxcall': None, 'dlogz': 0.01, 'logl_max': inf, 'n_effective': None, 'add_live': True, 'print_progress': True, 'print_func': <bound method Dynesty._print_func of <bilby.core.sampler.dynesty.Dynesty object at 0x14ac66901b10>>, 'save_bounds': False, 'checkpoint_file': None, 'checkpoint_every': 60, 'resume': False, 'seed': None}
-17:22 bilby INFO    : Checkpoint every check_point_delta_t = 600s
-17:22 bilby INFO    : Using dynesty version 2.1.5
-17:22 bilby INFO    : Using the bilby-implemented acceptance-walk sampling with an average of 60.0 accepted steps per MCMC and maximum length 5000
-17:22 bilby INFO    : Setting up multiproccesing pool with 16 processes
-17:22 bilby INFO    : Reading resume file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/47/None_resume.pickle
-17:22 bilby WARNING : The bilby version has changed between runs. This may cause unpredictable behaviour and/or failure. Old version = 2.3.1.dev40+g2b7ec5dad, new version = 2.3.1.dev42+g08096b53b.
-17:22 bilby INFO    : Resume file successfully loaded.
-/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/sampler.py:795: UserWarning: We have reached the plateau in the likelihood we are stopping sampling
-  warnings.warn(
-17:23 bilby INFO    : Written checkpoint file /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/47/None_resume.pickle
-17:23 bilby WARNING : Too many bins for data range. Cannot create 500 finite-sized bins.
-17:23 bilby WARNING : Failed to create dynesty state plot at checkpoint
-/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:749: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
-  ax.set_xlim(span[i])
-/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:252: RuntimeWarning: overflow encountered in exp
-  np.exp(logwt), logz if logplot else np.exp(logz)
-/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/utils.py:1033: UserWarning: Weights do not sum to 1 and have been renormalized.
-  warnings.warn("Weights do not sum to 1 and have been renormalized.")
-/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/dynesty/plotting.py:282: RuntimeWarning: overflow encountered in exp
-  zspan = (0., 1.05 * np.exp(logz[-1] + 3. * logzerr[-1]))
-17:23 bilby WARNING : Axis limits cannot be NaN or Inf
-17:23 bilby WARNING : Failed to create dynesty run plot at checkpoint
-17:23 bilby INFO    : Starting to close worker pool.
-17:23 bilby INFO    : Finished closing worker pool.
-17:23 bilby INFO    : Rejection sampling nested samples to obtain 500 posterior samples
-17:23 bilby INFO    : Sampling time: 4 days, 1:58:28.581624
-17:23 bilby INFO    : Summary of results:
-nsamples: 500
+10:55 bilby INFO    : Analysis priors:
+10:55 bilby INFO    : mass_ratio=Uniform(minimum=0.3970308220326837, maximum=1, name='mass_ratio', latex_label='$q$', unit=None, boundary=None)
+10:55 bilby INFO    : chirp_mass=Uniform(minimum=12.593509051797586, maximum=12.773509051797586, name='chirp_mass', latex_label='$\\mathcal{M}$', unit=None, boundary=None)
+10:55 bilby INFO    : luminosity_distance=Uniform(minimum=101.63773825466743, maximum=221.63773825466743, name='luminosity_distance', latex_label='$d_L$', unit=None, boundary=None)
+10:55 bilby INFO    : dec=Cosine(minimum=-1.5707963267948966, maximum=1.5707963267948966, name='dec', latex_label='$\\mathrm{DEC}$', unit=None, boundary=None)
+10:55 bilby INFO    : ra=Uniform(minimum=0, maximum=6.283185307179586, name='ra', latex_label='$\\mathrm{RA}$', unit=None, boundary='periodic')
+10:55 bilby INFO    : theta_jn=Sine(minimum=0, maximum=3.141592653589793, name='theta_jn', latex_label='$\\theta_{JN}$', unit=None, boundary=None)
+10:55 bilby INFO    : psi=Uniform(minimum=0, maximum=3.141592653589793, name='psi', latex_label='$\\psi$', unit=None, boundary='periodic')
+10:55 bilby INFO    : phase=Uniform(minimum=0, maximum=6.283185307179586, name='phase', latex_label='$\\phi$', unit=None, boundary='periodic')
+10:55 bilby INFO    : chi_1=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_1', latex_label='$\\chi_1$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
+10:55 bilby INFO    : chi_2=bilby.gw.prior.AlignedSpin(a_prior=Uniform(minimum=0, maximum=0.99, name=None, latex_label=None, unit=None, boundary=None), z_prior=Uniform(minimum=-1, maximum=1, name=None, latex_label=None, unit=None, boundary=None), name='chi_2', latex_label='$\\chi_2$', unit=None, boundary=None, minimum=-0.99, maximum=0.99)
+10:55 bilby INFO    : A=SymmetricLogUniform(minimum=1e-05, maximum=0.1, name='A', latex_label='A', unit=None, boundary=None)
+10:55 bilby INFO    : CE_time=Uniform(minimum=1934665752.3299422, maximum=1934665752.331942, name='CE_time', latex_label='$t_{CE}$', unit='$s$', boundary=None)
+10:55 bilby INFO    : a=0
+10:55 bilby INFO    : fiducial=0
+10:55 bilby INFO    : Analysis likelihood class: <class 'bilby.gw.likelihood.relative.RelativeBinningGravitationalWaveTransientNextGenerationModebyMode'>
+10:55 bilby INFO    : Analysis likelihood noise evidence: -502353.998060653
+10:55 bilby INFO    : Single likelihood evaluation took 1.023e-02 s
+10:55 bilby INFO    : Checkpoint every check_point_delta_t = 600s
+10:55 bilby WARNING : Using cached result
+10:55 bilby INFO    : Summary of results:
+nsamples: 2597
 ln_noise_evidence: -502353.998
-ln_evidence: 48518953205522879217664.000 +/- 9845861957.939
-ln_bayes_factor: 48518953205522879217664.000 +/- 9845861957.939
+ln_evidence: -63.535 +/-  0.315
+ln_bayes_factor: 502290.463 +/-  0.315
 
-/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/numpy/lib/_histograms_impl.py:901: RuntimeWarning: divide by zero encountered in divide
-  return n/db/n.sum(), bin_edges
-/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/numpy/lib/_histograms_impl.py:901: RuntimeWarning: invalid value encountered in divide
-  return n/db/n.sum(), bin_edges
-/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/corner/core.py:1008: UserWarning: Attempting to set identical low and high xlims makes transformation singular; automatically expanding.
-  return ax.set_xlim(new_xlim)
-Traceback (most recent call last):
-  File "/scratch/pratyusava.baral/Modified_Dispersion/bilby/scripts/pe.py", line 318, in <module>
-    result.plot_corner()
-  File "/home/pratyusava.baral/Modified_Dispersion/src/bilby-x-g/bilby/core/utils/plotting.py", line 65, in wrapper_decorator
-    return func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/pratyusava.baral/Modified_Dispersion/src/bilby-x-g/bilby/core/result.py", line 1285, in plot_corner
-    fig = corner.corner(xs, **kwargs)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/corner/corner.py", line 248, in corner
-    return corner_impl(
-           ^^^^^^^^^^^^
-  File "/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/corner/core.py", line 306, in corner_impl
-    _set_ylim(force_range, new_fig, ax, [0, 1.1 * np.max(n)])
-  File "/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/corner/core.py", line 1015, in _set_ylim
-    return ax.set_ylim(new_ylim)
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 4241, in set_ylim
-    return self.yaxis._set_lim(bottom, top, emit=emit, auto=auto)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/matplotlib/axis.py", line 1264, in _set_lim
-    v1 = self.axes._validate_converted_limits(v1, self.convert_units)
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 3913, in _validate_converted_limits
-    raise ValueError("Axis limits cannot be NaN or Inf")
-ValueError: Axis limits cannot be NaN or Inf
