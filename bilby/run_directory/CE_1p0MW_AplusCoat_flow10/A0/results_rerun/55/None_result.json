@@ -48840,7 +48840,10 @@
     "fiducial"
   ],
   "constraint_parameter_keys": [],
-  "sampling_time": 412320.161067,
+  "sampling_time": {
+    "__timedelta__": true,
+    "__total_seconds__": 412320.161067
+  },
   "sampler_kwargs": {
     "nlive": 500,
     "bound": "live",

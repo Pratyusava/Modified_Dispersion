@@ -1172,3 +1172,39 @@
 	   TimeExecute (s)      : 61050                       
 	   TimeSlotBusy (s)     : 61050                       
 ...
+000 (79829572.012.000) 2026-11-11 11:00:32 Job submitted from host: <10.14.0.121:9618?addrs=10.14.0.121-9618&alias=ldas-pcdev12.ligo.caltech.edu&noUDP&sock=schedd_97509_a45b>
+...
+001 (79829572.012.000) 2026-11-11 11:01:15 Job executing on host: <10.14.4.26:9618?addrs=10.14.4.26-9618&alias=node776.cluster.ldas.cit&noUDP&sock=startd_2063_9ff8>
+	SlotName: slot1_21@node776.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_337618/scratch"
+	Cpus = 4
+	Disk = 28672
+	GPUs = 0
+	Memory = 15104
+...
+006 (79829572.012.000) 2026-11-11 11:01:24 Image size of job updated: 361108
+	353  -  MemoryUsage of job (MB)
+	361108  -  ResidentSetSize of job (KB)
+...
+006 (79829572.012.000) 2026-11-11 11:01:57 Image size of job updated: 1405588
+	353  -  MemoryUsage of job (MB)
+	361108  -  ResidentSetSize of job (KB)
+...
+005 (79829572.012.000) 2026-11-11 11:01:57 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:37, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:37, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        4         4 
+	   Disk (KB)            :    25000    25000     28672 
+	   GPUs                 :                           0 
+	   Memory (MB)          :      353    15000     15104 
+	   TimeExecute (s)      :       42                    
+	   TimeSlotBusy (s)     :       42                    
+...

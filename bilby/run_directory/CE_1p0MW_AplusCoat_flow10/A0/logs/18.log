@@ -1533,3 +1533,105 @@
 	   TimeExecute (s)      :       33                    
 	   TimeSlotBusy (s)     :       33                    
 ...
+000 (79807266.018.000) 2026-11-06 17:18:17 Job submitted from host: <10.14.0.121:9618?addrs=10.14.0.121-9618&alias=ldas-pcdev12.ligo.caltech.edu&noUDP&sock=schedd_13631_4f89>
+...
+001 (79807266.018.000) 2026-11-06 17:21:59 Job executing on host: <10.14.3.105:9618?addrs=10.14.3.105-9618&alias=node605.cluster.ldas.cit&noUDP&sock=startd_3781658_6bf1>
+	SlotName: slot1_1@node605.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_687994/scratch"
+	Cpus = 4
+	Disk = 28672
+	GPUs = 0
+	Memory = 6016
+...
+021 (79807266.018.000) 2026-11-06 17:21:59 Error from starter on slot1_1@node605.cluster.ldas.cit:
+	Failed to execute '/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/bin/python' with arguments /scratch/pratyusava.baral/Modified_Dispersion/bilby/scripts/pe.py --chirp_mass 22.89914051624292 --chirp_mass_sigma 0.03 --mass_ratio 0.7746528764502036 --mass_ratio_sigma 0.2 --chi_1 0.0824914603470391 --chi_2 -0.04527616142465214 --ra 2.654734426025435 --dec 0.38147010326983355 --luminosity_distance 825.5825058909746 --luminosity_distance_sigma 20.0 --theta_jn 2.342469125601104 --psi 1.5953481256125623 --phase 6.231301800324036 --geocent_time 1943118604.4652147 --geocent_time_sigma 0.0001 --outdir /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/18 --A_max 1e-1 --sample-CE-arrival-time --time_prior_halfwidth 0.001 --flow 10 --A1 --asd_CE40low --nlive 500 --nact 60 --npool 16 --dlogz 0.01 --chi 10 --epsilon 0.1 -1245 --mode_array [[2,2],' '[3,2],' '[3,3],' '[4,4]]: Cannot access initial working directory "/home/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0" (errno=2: 'No such file or directory')
+	Code 6 Subcode 2
+...
+004 (79807266.018.000) 2026-11-06 17:22:09 Job was evicted. Code 6 Subcode 2
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Error from slot1_1@node605.cluster.ldas.cit: Failed to execute '/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/bin/python' with arguments /scratch/pratyusava.baral/Modified_Dispersion/bilby/scripts/pe.py --chirp_mass 22.89914051624292 --chirp_mass_sigma 0.03 --mass_ratio 0.7746528764502036 --mass_ratio_sigma 0.2 --chi_1 0.0824914603470391 --chi_2 -0.04527616142465214 --ra 2.654734426025435 --dec 0.38147010326983355 --luminosity_distance 825.5825058909746 --luminosity_distance_sigma 20.0 --theta_jn 2.342469125601104 --psi 1.5953481256125623 --phase 6.231301800324036 --geocent_time 1943118604.4652147 --geocent_time_sigma 0.0001 --outdir /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/18 --A_max 1e-1 --sample-CE-arrival-time --time_prior_halfwidth 0.001 --flow 10 --A1 --asd_CE40low --nlive 500 --nact 60 --npool 16 --dlogz 0.01 --chi 10 --epsilon 0.1 -1245 --mode_array [[2,2],' '[3,2],' '[3,3],' '[4,4]]: Cannot access initial working directory "/home/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0" (errno=2: 'No such file or directory')
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :    25000    25000     28672 
+	   GPUs                 :                           0 
+	   Memory (MB)          :              6000      6016 
+	   TimeSlotBusy (s)     :        7                    
+...
+012 (79807266.018.000) 2026-11-06 17:22:09 Job was held.
+	Error from slot1_1@node605.cluster.ldas.cit: Failed to execute '/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/bin/python' with arguments /scratch/pratyusava.baral/Modified_Dispersion/bilby/scripts/pe.py --chirp_mass 22.89914051624292 --chirp_mass_sigma 0.03 --mass_ratio 0.7746528764502036 --mass_ratio_sigma 0.2 --chi_1 0.0824914603470391 --chi_2 -0.04527616142465214 --ra 2.654734426025435 --dec 0.38147010326983355 --luminosity_distance 825.5825058909746 --luminosity_distance_sigma 20.0 --theta_jn 2.342469125601104 --psi 1.5953481256125623 --phase 6.231301800324036 --geocent_time 1943118604.4652147 --geocent_time_sigma 0.0001 --outdir /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/18 --A_max 1e-1 --sample-CE-arrival-time --time_prior_halfwidth 0.001 --flow 10 --A1 --asd_CE40low --nlive 500 --nact 60 --npool 16 --dlogz 0.01 --chi 10 --epsilon 0.1 -1245 --mode_array [[2,2],' '[3,2],' '[3,3],' '[4,4]]: Cannot access initial working directory "/home/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0" (errno=2: 'No such file or directory')
+	Code 6 Subcode 2
+...
+013 (79807266.018.000) 2026-11-06 17:23:47 Job was released.
+	via condor_release (by user pratyusava.baral)
+...
+001 (79807266.018.000) 2026-11-06 17:24:12 Job executing on host: <10.14.4.221:9618?addrs=10.14.4.221-9618&alias=node971.cluster.ldas.cit&noUDP&sock=startd_4100350_a041>
+	SlotName: slot1_1@node971.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_1426356/scratch"
+	Cpus = 4
+	Disk = 28672
+	GPUs = 0
+	Memory = 6016
+...
+021 (79807266.018.000) 2026-11-06 17:24:13 Error from starter on slot1_1@node971.cluster.ldas.cit:
+	Failed to execute '/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/bin/python' with arguments /scratch/pratyusava.baral/Modified_Dispersion/bilby/scripts/pe.py --chirp_mass 22.89914051624292 --chirp_mass_sigma 0.03 --mass_ratio 0.7746528764502036 --mass_ratio_sigma 0.2 --chi_1 0.0824914603470391 --chi_2 -0.04527616142465214 --ra 2.654734426025435 --dec 0.38147010326983355 --luminosity_distance 825.5825058909746 --luminosity_distance_sigma 20.0 --theta_jn 2.342469125601104 --psi 1.5953481256125623 --phase 6.231301800324036 --geocent_time 1943118604.4652147 --geocent_time_sigma 0.0001 --outdir /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/18 --A_max 1e-1 --sample-CE-arrival-time --time_prior_halfwidth 0.001 --flow 10 --A1 --asd_CE40low --nlive 500 --nact 60 --npool 16 --dlogz 0.01 --chi 10 --epsilon 0.1 -1245 --mode_array [[2,2],' '[3,2],' '[3,3],' '[4,4]]: Cannot access initial working directory "/home/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0" (errno=2: 'No such file or directory')
+	Code 6 Subcode 2
+...
+004 (79807266.018.000) 2026-11-06 17:24:23 Job was evicted. Code 6 Subcode 2
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	Reason: Error from slot1_1@node971.cluster.ldas.cit: Failed to execute '/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/bin/python' with arguments /scratch/pratyusava.baral/Modified_Dispersion/bilby/scripts/pe.py --chirp_mass 22.89914051624292 --chirp_mass_sigma 0.03 --mass_ratio 0.7746528764502036 --mass_ratio_sigma 0.2 --chi_1 0.0824914603470391 --chi_2 -0.04527616142465214 --ra 2.654734426025435 --dec 0.38147010326983355 --luminosity_distance 825.5825058909746 --luminosity_distance_sigma 20.0 --theta_jn 2.342469125601104 --psi 1.5953481256125623 --phase 6.231301800324036 --geocent_time 1943118604.4652147 --geocent_time_sigma 0.0001 --outdir /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/18 --A_max 1e-1 --sample-CE-arrival-time --time_prior_halfwidth 0.001 --flow 10 --A1 --asd_CE40low --nlive 500 --nact 60 --npool 16 --dlogz 0.01 --chi 10 --epsilon 0.1 -1245 --mode_array [[2,2],' '[3,2],' '[3,3],' '[4,4]]: Cannot access initial working directory "/home/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0" (errno=2: 'No such file or directory')
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 4         4 
+	   Disk (KB)            :    25000    25000     28672 
+	   GPUs                 :                           0 
+	   Memory (MB)          :              6000      6016 
+	   TimeSlotBusy (s)     :        1                    
+...
+012 (79807266.018.000) 2026-11-06 17:24:23 Job was held.
+	Error from slot1_1@node971.cluster.ldas.cit: Failed to execute '/scratch/pratyusava.baral/Modified_Dispersion/src/dispersion/bin/python' with arguments /scratch/pratyusava.baral/Modified_Dispersion/bilby/scripts/pe.py --chirp_mass 22.89914051624292 --chirp_mass_sigma 0.03 --mass_ratio 0.7746528764502036 --mass_ratio_sigma 0.2 --chi_1 0.0824914603470391 --chi_2 -0.04527616142465214 --ra 2.654734426025435 --dec 0.38147010326983355 --luminosity_distance 825.5825058909746 --luminosity_distance_sigma 20.0 --theta_jn 2.342469125601104 --psi 1.5953481256125623 --phase 6.231301800324036 --geocent_time 1943118604.4652147 --geocent_time_sigma 0.0001 --outdir /scratch/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0/results/18 --A_max 1e-1 --sample-CE-arrival-time --time_prior_halfwidth 0.001 --flow 10 --A1 --asd_CE40low --nlive 500 --nact 60 --npool 16 --dlogz 0.01 --chi 10 --epsilon 0.1 -1245 --mode_array [[2,2],' '[3,2],' '[3,3],' '[4,4]]: Cannot access initial working directory "/home/pratyusava.baral/Modified_Dispersion/bilby/run_directory/CE_1p0MW_AplusCoat_flow10/A0" (errno=2: 'No such file or directory')
+	Code 6 Subcode 2
+...
+013 (79807266.018.000) 2026-11-06 17:25:24 Job was released.
+	via condor_release (by user pratyusava.baral)
+...
+001 (79807266.018.000) 2026-11-06 17:25:52 Job executing on host: <10.14.8.39:9618?addrs=10.14.8.39-9618&alias=node1789.cluster.ldas.cit&noUDP&sock=startd_2427900_08cf>
+	SlotName: slot1_2@node1789.cluster.ldas.cit
+	CondorScratchDir = "/var/lib/condor/execute/dir_1756626/scratch"
+	Cpus = 4
+	Disk = 28672
+	GPUs = 0
+	Memory = 6016
+...
+006 (79807266.018.000) 2026-11-06 17:26:01 Image size of job updated: 158864
+	156  -  MemoryUsage of job (MB)
+	158864  -  ResidentSetSize of job (KB)
+...
+006 (79807266.018.000) 2026-11-06 17:26:16 Image size of job updated: 496908
+	156  -  MemoryUsage of job (MB)
+	158864  -  ResidentSetSize of job (KB)
+...
+005 (79807266.018.000) 2026-11-06 17:26:16 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:20, Sys 0 00:00:01  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:20, Sys 0 00:00:01  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        4         4 
+	   Disk (KB)            :    25000    25000     28672 
+	   GPUs                 :                           0 
+	   Memory (MB)          :      156     6000      6016 
+	   TimeExecute (s)      :       24                    
+	   TimeSlotBusy (s)     :       24                    
+...
